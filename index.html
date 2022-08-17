@@ -2,9 +2,8 @@
 <head><title>Ahoy Indie Media - Alive Watch </title>
 
 <style>
-
 body {
-    background-color: rgb(255,255,255);
+    background-color: rgb(0,0,0);
     max-height:100vh;
     overflow: hidden;
 }
@@ -22,7 +21,6 @@ body {
     left: 0;
     right: 0px;
     width: 100%;
-    min-height:100vh;
     height: 100%;
     border: black;
     border-style: solid;
@@ -31,7 +29,7 @@ body {
 
 .ahoyTimeDiv {
     padding: 25px;
-    padding-top:  100px;
+    /*padding-top:  100px; */
 }
 
 .ahoy_ticker {
@@ -49,17 +47,39 @@ body {
   outline-offset: 0px;
   outline-style: solid;
   outline-width: 1px;
+  text-align:center;
 }
 
+.customWhite {
+    color:white;
+}
 </style>
-
-
-
 </head>
+
 <body>
   
 
+<!-- LIVE CLOCK -->
 
+<script>
+
+    var span = document.getElementById('span');
+    
+    function time() {
+      var d = new Date();
+      var s = d.getSeconds();
+      var m = d.getMinutes();
+      var h = d.getHours();
+      span.textContent = 
+        ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
+    }
+    
+    setInterval(time, 1000);
+    
+    </script>
+
+    
+<!-- END LIVE CLOCK -->
 
 <div class="wrapper">
     <iframe id="ahoyPlayer" class="wrapper iframe" src="https://cdn.jwplayer.com/players/zj3nmkYz-xwwQ9uP0.html">
@@ -69,7 +89,6 @@ body {
 <div class="ahoyTimeDiv" id="ahoytimeBox">
     <p id="ahoyPushTime"></p>
     <p id="ahoyPushTitle"></p>
-    <span id="span"></span>
     </div>
 
     <style>
@@ -78,7 +97,7 @@ body {
         /* Create three equal columns that floats next to each other */
         .ahoyTickerCol {
           float: left;
-          width: 25%;
+          width: 30%;
           padding: 10px;
         }
 
@@ -115,19 +134,22 @@ body {
 
 
 <div class="ahoy_ticker">
-    Ahoy Ticker | 
+
+
+
+   <b>Ahoy Ticker | Watch Live A</b>
     <div class="ahoyTickerColWrap">
 
-        <div class="ahoyTickerCol"><h5>Monday </h5>| 09.22.22 </p></div>
-        <div class="ahoyTickerCol"></div>
+        <div class="ahoyTickerCol">Monday | 09.22.22 </div>
+        <div class="ahoyTickerCol">Should be Playing : Playblock kC
+        </div>
         <div class="ahoyTickerCol">Time is 10:38AM EST</div>
             
         </div>
 </div>
-<p id="ahoyPushTitle"></p>
 <p id="ahoyPushTime"></p>
-    <p id="ahoyPushTime2"></p>
-</div>
+<p id="ahoyPushTitle"></p>
+
 
 <script>
 
@@ -233,33 +255,10 @@ body {
         //alert("It is 4pm - playblock 4 should load"); 
     }
 
-
-
-
-
-        
     </script>
+</div>
 
 
-
-<!-- LIVE CLOCK -->
-<script>
-
-var span = document.getElementById('span');
-
-function time() {
-  var d = new Date();
-  var s = d.getSeconds();
-  var m = d.getMinutes();
-  var h = d.getHours();
-  span.textContent = 
-    ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
-}
-
-setInterval(time, 1000);
-
-</script>
-<span id="span"></span>
 
 </body>
 
