@@ -4,7 +4,9 @@
 <style>
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255,255,255);
+    max-height:100vh;
+    overflow: hidden;
 }
 
 .wrapper {
@@ -18,8 +20,9 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    right: 10px;
+    right: 0px;
     width: 100%;
+    min-height:100vh;
     height: 100%;
     border: black;
     border-style: solid;
@@ -29,6 +32,23 @@ body {
 .ahoyTimeDiv {
     padding: 25px;
     padding-top:  100px;
+}
+
+.ahoy_ticker {
+  position: absolute;
+  left: 0%;
+  /*top: auto; */
+  right: 0%;
+  /* BOTTOM IS WHERE YOU CAN CHANGE THE POSITION  */
+  bottom: 2.5%;
+  width: 100%;
+  height: 80px;
+  background-color: #000000;
+  background-image: linear-gradient(279deg, #ff134e, #ff517c);
+  outline-color: #fff;
+  outline-offset: 0px;
+  outline-style: solid;
+  outline-width: 1px;
 }
 
 </style>
@@ -52,9 +72,64 @@ body {
     <span id="span"></span>
     </div>
 
+    <style>
+
+        
+        /* Create three equal columns that floats next to each other */
+        .ahoyTickerCol {
+          float: left;
+          width: 25%;
+          padding: 10px;
+        }
+
+        .ahoyTickerColWrap
+        {
+            width: 100%;
+        }
+
+        .ayeTitle {
+            font-weight:500;
+        }
+
+        
+        
+ </style>
+
+<!-- LIVE CLOCK -->
+<script>
+
+    var superTimeSpan = document.getElementById('superTime');
+    
+    function time() {
+      var d = new Date();
+      var s = d.getSeconds();
+      var m = d.getMinutes();
+      var h = d.getHours();
+      superTimeSpan.textContent = 
+        ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
+    }
+    
+    setInterval(time, 1000);
+    
+    </script>
 
 
-<script language="JavaScript">
+<div class="ahoy_ticker">
+    Ahoy Ticker | 
+    <div class="ahoyTickerColWrap">
+
+        <div class="ahoyTickerCol"><h5>Monday </h5>| 09.22.22 </p></div>
+        <div class="ahoyTickerCol"></div>
+        <div class="ahoyTickerCol">Time is 10:38AM EST</div>
+            
+        </div>
+</div>
+<p id="ahoyPushTitle"></p>
+<p id="ahoyPushTime"></p>
+    <p id="ahoyPushTime2"></p>
+</div>
+
+<script>
 
 
     
@@ -102,6 +177,7 @@ body {
 
         if (hr == 10) {
         document.getElementById("ahoyPushTime").innerHTML = "Time is 10AM";
+        document.getElementById("ahoyPushTime2").innerHTML = "Time is 10AM";
         document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 2";
         document.getElementById('ahoyPlayer').src = playBlock2;
         //alert("It is 10AM - playblock 2 should load"); 
