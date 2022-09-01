@@ -1,9 +1,57 @@
 <html>
-<head><title>Ahoy Indie Media - Alive Watch Build 2.0.1a</title>
+<head><title>Ahoy Indie Media - Alive Watch Build 1.0.4a</title>
        
 <style>
  @import url('https://fonts.googleapis.com/css?family=Rubik');
 
+span {
+    margin:0px;
+    padding:0px;
+}
+
+p {
+    margin:0px;
+    padding:0px;
+}
+
+ .lowerMenuMenu {
+    border-color:white;
+    border-width: 20px;
+ }
+
+.watchTickerText {
+    font-size:10px;
+    text-align:center;
+    text-transform: uppercase;
+}
+
+button{
+    background-color:#000000;
+    color:white;
+    font-size:12px;
+    font-family:rubik;
+    text-decoration: none;
+    text-transform: uppercase;
+    height:30px;
+    background: transparent;
+    border: none;
+    cursor:pointer;
+
+}
+
+button:hover {
+    background-color:#4f4f4f;
+    color:white;
+    font-size:12px;
+    font-family:rubik;
+    text-decoration: none;
+    text-transform: uppercase;
+    height:30px;
+    border: none;
+    cursor:pointer;
+
+
+}
 
 .ahoy_ticker {
   position: fixed;
@@ -17,7 +65,7 @@
     /* OVERFLOW SETTINGS */
 
   overflow-y: hidden;
-  background-color: #000000;
+  background-color: #0000004b;
   outline-color: #FFFFBC;
   outline-offset: 0px;
   outline-style: solid;
@@ -31,7 +79,16 @@
           width: 20%;
          min-height:100%;
           padding: 10px;
-          background-color: #0B030C;
+          background-color: #0b030c97;
+
+        }
+
+        .ahoyTickerCol:hover {
+          float: left;
+          width: 20%;
+         min-height:100%;
+          padding: 10px;
+          background-color: #0b030cd9;
 
         }
 
@@ -42,13 +99,13 @@
           padding: 10px;
           font-family: "Rubik";
           text-align:center;
-          background-color: #0B030C;
+          background-color: #0b030c97;
 
 
         }
 
         .ahoyTickerColTIME {
-            background-color: #0B030C;
+            background-color:#0b030c97;
           float: left;
           min-height: 100%;
           width: 25%;
@@ -65,12 +122,12 @@
         .ahoyTickerColWrap
         {
             width: 100%;
-  align-items: center;
-  justify-content: center;
+  align-items: top;
+text-align:center;
 }
         .ayeTitle {
             font-weight:500;
-            font-size:16px;
+            font-size:14px;
         }
 
         
@@ -207,10 +264,9 @@ body {
 <!-- COLUMN 1 -->
 <!-- COLUMN 1 -->
         <div class="ahoyTickerCol">
-            <a target="_blank" href="https://www.ahoy.ooo">
+            <a target="_blank" href="https://app.ahoy.ooo">
 <img class="imgAhoyLogo"src="https://assets.website-files.com/6241eb152e497109dfed842b/6241eb152e49716431ed8454_ahoy_logo_web_2%20(1)%204.png">
             </a>
-
 
 
 
@@ -234,19 +290,28 @@ body {
 <!-- COLUMN 2 -->
 
 
-                <!-- COLUMN 2 -->
+<!-- COLUMN 2 -->
 
-        <div class="ahoyTickerColMIDDLE">
-            
-<br>
-        
-            <span id="spanTITLE"> Live </span> | Self-Contained App Build - 2.0.1
-<!-- AHOY PUSH BLOCK TITLE  -->
+<div class="ahoyTickerColMIDDLE">
+    <!-- LINE 1         -->
+    <!-- AHOY PUSH BLOCK TITLE  -->
 <p class="superFont" id="ahoyPushTitle"></p>
 
-<br>
+    <!-- LINE 2  :      -->
+    <p class="watchTickerText"><span id="spanTITLE"> Active Feed </span> Ahoy Watch - build 1.0.4a</p>
+      
+    <br>
 
-
+    <button onclick="location.href='https://app.ahoy.ooo'">Menu</button>
+            <button onclick="location.href='https://watch.ahoy.ooo'">Watch</button>
+            <button onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
+            <button onclick="location.href='https://eth.ahoy.ooo'">Eth</button>
+            <button onclick="location.href='https://library.ahoy.ooo'">Library</button>
+    
+    
+    <!-- LINE 3  :  -->
+       
+        
 <div id="myDiv" style="height:500px height:500px"></div>
 <script>
 
@@ -261,7 +326,6 @@ function changeAhoyTickerDolor() {
 
 
 
-
         </div>
 
 
@@ -272,10 +336,7 @@ function changeAhoyTickerDolor() {
           <!-- END OF COLUMN 2 -->
            <!-- END OF COLUMN 2 -->
             <!-- END OF COLUMN 2 -->
-             <!-- END OF COLUMN 2 -->
-
-
-
+ <!-- END OF COLUMN 2 -->
 
 
 
