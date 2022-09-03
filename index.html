@@ -1,14 +1,41 @@
 <html>
-<head><title>Ahoy Indie Media - Alive Watch Build 1.0.4a</title>
+<head>
+<!-- INSTALLS -->
+
+<!-- PLUGINS -->
+<!-- PLUGIN #1 = FONT AWESOME PLUGIN -->
+<script src="https://kit.fontawesome.com/f7c1ebf58b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
+    
+    
+    <title>Ahoy Indie Media - Alive Watch Build 1.0.5c</title>
        
 <style>
+
+
+
+
  @import url('https://fonts.googleapis.com/css?family=Rubik');
+
+
+ body {
+    background-color: #0B030C;
+    max-height:1000px;
+    min-height:30vh;
+    overflow: hidden;
+    padding:25px;
+    border:50px;
+    color:white;
+}
+
+
+
 
 span {
     margin:0px;
     padding:0px;
 }
-
 p {
     margin:0px;
     padding:0px;
@@ -72,7 +99,7 @@ button:hover {
   outline-width: 1px;
   text-align:center;
 }
-
+/* Create three equal columns tha
  /* Create three equal columns that floats next to each other */
  .ahoyTickerCol {
           float: left;
@@ -82,13 +109,12 @@ button:hover {
           background-color: #0b030c97;
 
         }
-
         .ahoyTickerCol:hover {
           float: left;
           width: 20%;
          min-height:100%;
           padding: 10px;
-          background-color: #0b030cd9;
+          background-color: #f9c9ff00;
 
         }
 
@@ -99,13 +125,15 @@ button:hover {
           padding: 10px;
           font-family: "Rubik";
           text-align:center;
-          background-color: #0b030c97;
+          background-color: #e94dfe00;
 
 
         }
 
+        
+
         .ahoyTickerColTIME {
-            background-color:#0b030c97;
+            background-color:#e418ff00;
           float: left;
           min-height: 100%;
           width: 25%;
@@ -147,12 +175,24 @@ img:hover {
 #spanTITLE
 { 
     font-family:Rubik, serif;
-            font-weight: 900;
-            font-size:16px;
+            font-weight: 300;
+            font-size:11px;
             text-align:center;
             padding-top:10px;
             padding-bottom:10px;
-            color:#FF5E7C;
+            color:#ff5e9c;
+            text-transform: uppercase;
+}
+
+#spanTITLEmiddle
+{
+    font-family:Rubik, serif;
+            font-weight: 900;
+            font-size:32px;
+            text-align:center;
+            padding-top:10px;
+            padding-bottom:10px;
+            color:#ff5e9c;
             text-transform: uppercase;
 }
 
@@ -160,18 +200,10 @@ html {
     position: relative;
     min-width: 1024px;
     min-height: 768px;
-    height: 100%;
+    height: 90%;
 }
     
-body {
-    background-color: #0B030C;
-    max-height:1000px;
-    min-height:30vh;
-    overflow: hidden;
-    padding:25px;
-    border:50px;
-    color:white;
-}
+
 
 .wrapper {
     position: relative;
@@ -206,9 +238,83 @@ body {
 
 }
 
+.superFontTINY {
+    font-weight: 400;
+    font-size: 11px;
+    font-family: rubik;
+    color:rgba(70, 70, 70, 0.707);
+    text-transform: uppercase;
+
+}
+
 .customWhite {
     color:white;
 }
+
+
+/* AHOY TICKER _ COLUMN A _ WRAPS _ DEFO _ VERTICAL MENU  */
+.innerAHOYBoxMenu {
+    background: #002d5514;
+    box-shadow: 0px 0px 6px 0px #a5a5a500;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.innerAHOYBoxMenuMIDDLE {
+    background: #1190ff00;
+    width:100%;
+    min-height:75px;
+    text-align: center;
+    display: block;
+    
+}
+
+.outerAHOYBoxMenu {
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 0px 0px 6px 0px #a5a5a500;
+    border-radius: 5px;
+    max-height:70px;
+    overflow:hidden;
+}
+
+
+.ahoyMiniMenu {
+
+    display: block;
+
+}
+
+.ahoyMiniMenuMiddle {
+    display: block;
+    background-color: rgba(204, 204, 204, 0) ;
+}
+
+.btn-group .button {
+  background-color: #4c86af00; /* Green */
+  border: 1px solid rgb(24, 255, 232);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  width: 150px;
+  display: block;
+}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #109bff3f;
+}
+
+
 </style>
 </head>
 
@@ -216,8 +322,7 @@ body {
   
 <!-- THE MAIN DEAL-->
 <!-- THE MAIN DEAL-->
-<!-- THE MAIN DEAL-->
-<!-- THE MAIN DEAL-->
+
 <!-- THE MAIN DEAL-->
 <!-- THE MAIN DEAL-->
 
@@ -264,7 +369,7 @@ body {
 <!-- COLUMN 1 -->
 <!-- COLUMN 1 -->
         <div class="ahoyTickerCol">
-            <a target="_blank" href="https://app.ahoy.ooo">
+            <a target="_blank" href="https://ahoy.ooo">
 <img class="imgAhoyLogo"src="https://assets.website-files.com/6241eb152e497109dfed842b/6241eb152e49716431ed8454_ahoy_logo_web_2%20(1)%204.png">
             </a>
 
@@ -293,22 +398,82 @@ body {
 <!-- COLUMN 2 -->
 
 <div class="ahoyTickerColMIDDLE">
+
+<div class="outerAHOYBoxMenu">
+
+
+<div class="innerAHOYBoxMenu">
+<p class="superFont">
+   <div class="ahoyMiniMenu">
+    <div class="btn-group">
+        <button class="button" onclick="location.href='https://ahoy.ooo'">Menu</button>
+        <button class="button" onclick="openFullscreen();">Fullscreen Mode</button>
+    
+    </div>
+   </div>
+</p>
+</div>
+
+<div class="innerAHOYBoxMenuMIDDLE">
+    <p class="superFont">
+       <div class="ahoyMiniMenuMiddle">
+        <p class="watchTickerText"><span id="spanTITLEmiddle"> Active Feed </span> build 1.0.5c</p>
+       </div>
+    </p>
+
+
+<!-- -->
+    
+    <div><p class="superFontTINY" id="ahoyTODAY"></p>
+
+        <script>
+        const d = new Date("Jan 25 2015");
+        document.getElementById("ahoyTODAY").innerHTML = d;
+        </script>
+
+
+<!--VERY IMPORTANT _ SHOW THE FUNCTION = PUSH TITLE -->
+        <p class="superFont" id="ahoyPushTitle"></p>
+
+
+    </div>
+
+<!-- -->
+<!-- -->
+<!-- -->
+
+
+
+    </div>
+
+    <div class="innerAHOYBoxMenu">
+        <p class="superFont">
+           <div class="ahoyMiniMenu">
+              </div>
+           </div>
+        </p>
+        </div>
+
+</div>
+
+
+<div id="minitoTheRight">
     <!-- LINE 1         -->
     <!-- AHOY PUSH BLOCK TITLE  -->
-<p class="superFont" id="ahoyPushTitle"></p>
+
 
     <!-- LINE 2  :      -->
-    <p class="watchTickerText"><span id="spanTITLE"> Active Feed </span> Ahoy Watch - build 1.0.4a_clean</p>
+    <p class="watchTickerText"><span id="spanTITLE"> Active Feed </span> build 1.0.5c</p>
       
-    <br>
+   
 
     <button onclick="location.href='https://app.ahoy.ooo'">Menu</button>
             <button onclick="location.href='https://watch.ahoy.ooo'">Watch</button>
             <button onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
-            
+
     
     <!-- LINE 3  :  -->
-       
+</div>
         
 <div id="myDiv" style="height:500px height:500px"></div>
 <script>
@@ -349,7 +514,10 @@ function changeAhoyTickerDolor() {
 <!-- COLUMN 3 -->
 <!-- COLUMN 3 -->
 
+
+<!-- COL3 LINE 1 -->
 <div class="ahoyTickerColTIME">
+
 <!-- AHOY PUSH TIME  -->
     <p class="superFont" id="ahoyPushTime"></p>
 
@@ -375,27 +543,10 @@ function time() {
 
 setInterval(time, 1000);
 </script>
+<!-- COL3 LINE 2 -->
+<br>
+<!-- COL3 LINE 3 -->
 
-
-<script>
-    var span = document.getElementById('span');
-    
-    function time() {
-      var d = new Date();
-      var s = d.getSeconds();
-      var m = d.getMinutes();
-      var h = d.getHours();
-      span.textContent = 
-        ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
-    }
-    
-    setInterval(time, 1000);
-    </script>
-    
-
-
-
-</div>
 
 <!-- END OF TICKER -->
 <!-- END OF TICKER -->
@@ -651,7 +802,19 @@ if (hr == 19) {
 <!-- SUPER SUPER SUPER SUPER -->
 <!-- SUPER SUPER SUPER SUPER -->
 
-
+<!-- -->
+<script>
+    var elem = document.getElementById("ahoyPlayer");
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
+    </script>
 
 </body>
 </html>
