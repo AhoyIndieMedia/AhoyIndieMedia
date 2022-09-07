@@ -9,7 +9,7 @@
 
     
     
-    <title>Ahoy Indie Media - Alive Watch Build 1.0.5c</title>
+    <title>Ahoy Indie Media - Alive Watch Build 1.0.5d</title>
        
 <style>
 
@@ -22,11 +22,9 @@
  body {
     background-color: #0B030C;
     max-height:1000px;
-    min-height:30vh;
     overflow: hidden;
-    padding:25px;
-    border:50px;
-    color:white;
+    padding:5px;
+
 }
 
 
@@ -39,6 +37,7 @@ span {
 p {
     margin:0px;
     padding:0px;
+    color:white;
 }
 
  .lowerMenuMenu {
@@ -53,7 +52,7 @@ p {
 }
 
 button{
-    background-color:#000000;
+    background-color:#cecece;
     color:white;
     font-size:12px;
     font-family:rubik;
@@ -80,47 +79,68 @@ button:hover {
 
 }
 
+.activeButton {
+    background-color:#23c8ff4b;
+    color:white;
+    font-size:12px;
+    font-family:rubik;
+    text-decoration: none;
+    text-transform: uppercase;
+    height:30px;
+    border: none;
+    cursor:pointer;
+    border:1px;
+    border-color: wheat;
+
+
+
+}
+
 .ahoy_ticker {
-  position: fixed;
-  left: 0%;
+    position: fixed;
+
+  left: 1%;
   /*top: auto; */
-  right: 0%;
+  right: 1%;
   /* BOTTOM IS WHERE YOU CAN CHANGE THE POSITION  */
   bottom: 1.5%;
-  width: 100%;
-  height: 100px;
+  width: 98%;
+  height: 90px;
     /* OVERFLOW SETTINGS */
-
+overflow:none;
   overflow-y: hidden;
   background-color: #0000004b;
   outline-color: #FFFFBC;
   outline-offset: 0px;
   outline-style: solid;
   outline-width: 1px;
-  text-align:center;
+  vertical-align: auto;
+
 }
 /* Create three equal columns tha
  /* Create three equal columns that floats next to each other */
  .ahoyTickerCol {
           float: left;
-          width: 20%;
+          width: 5%;
          min-height:100%;
-          padding: 10px;
+          padding: 5px;
           background-color: #0b030c97;
+          max-width: 25%;
 
         }
         .ahoyTickerCol:hover {
           float: left;
-          width: 20%;
+          width: 5%;
          min-height:100%;
-          padding: 10px;
+          padding: 5px;
           background-color: #f9c9ff00;
+          max-width: 25%;
 
         }
 
         .ahoyTickerColMIDDLE {
           float: left;
-          width: 50%;
+          width: 60%;
           min-height: 100%;
           padding: 10px;
           font-family: "Rubik";
@@ -136,8 +156,8 @@ button:hover {
             background-color:#e418ff00;
           float: left;
           min-height: 100%;
-          width: 25%;
-          padding-top: 10px;
+          width: 31%;
+          padding-top: 5px;
           padding-bottom: 20px;
           font-family: "rubik";
           text-align: right;
@@ -150,9 +170,10 @@ button:hover {
         .ahoyTickerColWrap
         {
             width: 100%;
-  align-items: top;
-text-align:center;
-}
+            align-items: top;
+            text-align:center;
+         }
+
         .ayeTitle {
             font-weight:500;
             font-size:14px;
@@ -164,8 +185,10 @@ text-align:center;
   border: 11px solid rgba(221, 221, 221, 0.016);
   border-radius: 4px;
   padding: 5px;
-  width: auto;
-  height: 50px;
+  margin-right: 10px;
+  width: 100px;
+  height:auto;
+
 }
 
 img:hover {
@@ -199,8 +222,8 @@ img:hover {
 html {
     position: relative;
     min-width: 1024px;
-    min-height: 768px;
-    height: 90%;
+
+    height: 50%;
 }
     
 
@@ -208,7 +231,7 @@ html {
 .wrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
+    padding-top: 0px;
     height: 0;
     border: white;
 }
@@ -225,22 +248,22 @@ html {
 }
 
 .ahoyTimeDiv {
-    padding: 25px;
+    padding: 5px;
     /*padding-top:  100px; */
 }
 
 .superFont {
-    font-weight: 900;
-    font-size: 12px;
+    font-weight: 800;
+    font-size: 11px;
     font-family: rubik;
-    color:rgba(255, 255, 255, 0.707);
+    color:rgba(255, 244, 244, 0.892);
     text-transform: uppercase;
 
 }
 
 .superFontTINY {
     font-weight: 400;
-    font-size: 11px;
+    font-size: 21px;
     font-family: rubik;
     color:rgba(70, 70, 70, 0.707);
     text-transform: uppercase;
@@ -315,6 +338,12 @@ html {
 }
 
 
+
+.watchMiniDisplay_Desktop {
+    background-color: #ccc;
+    height: 55px;
+}
+
 </style>
 </head>
 
@@ -338,19 +367,14 @@ html {
 <!-- END OF THE MAIN DEAL-->
 <!-- END OF THE MAIN DEAL-->
 
-<!-- END OF THE MAIN DEAL-->
-<!-- END OF THE MAIN DEAL-->
-<!-- END OF THE MAIN DEAL-->
-<!-- END OF THE MAIN DEAL-->
+
 
 
 
 
 
 <!-- THE AHOY TICKER-->
-<!-- THE AHOY TICKER-->
-<!-- THE AHOY TICKER-->
-<!-- THE AHOY TICKER-->
+
 <!-- THE AHOY TICKER-->
 <!-- THE AHOY TICKER-->
 
@@ -369,6 +393,7 @@ html {
 <!-- COLUMN 1 -->
 <!-- COLUMN 1 -->
         <div class="ahoyTickerCol">
+
             <a target="_blank" href="https://ahoy.ooo">
 <img class="imgAhoyLogo"src="https://assets.website-files.com/6241eb152e497109dfed842b/6241eb152e49716431ed8454_ahoy_logo_web_2%20(1)%204.png">
             </a>
@@ -398,98 +423,11 @@ html {
 <!-- COLUMN 2 -->
 
 <div class="ahoyTickerColMIDDLE">
+    <p class="superFont" id="ahoyPushTitle"></p>
 
-<div class="outerAHOYBoxMenu">
-
-
-<div class="innerAHOYBoxMenu">
-<p class="superFont">
-   <div class="ahoyMiniMenu">
-    <div class="btn-group">
-        <button class="button" onclick="location.href='https://ahoy.ooo'">Menu</button>
-        <button class="button" onclick="openFullscreen();">Fullscreen Mode</button>
-    
-    </div>
-   </div>
-</p>
-</div>
-
-<div class="innerAHOYBoxMenuMIDDLE">
-    <p class="superFont">
-       <div class="ahoyMiniMenuMiddle">
-        <p class="watchTickerText"><span id="spanTITLEmiddle"> Active Feed </span> build 1.0.5c</p>
-       </div>
-    </p>
-
-
-<!-- -->
-    
-    <div><p class="superFontTINY" id="ahoyTODAY"></p>
-
-        <script>
-        const d = new Date("Jan 25 2015");
-        document.getElementById("ahoyTODAY").innerHTML = d;
-        </script>
-
-
-<!--VERY IMPORTANT _ SHOW THE FUNCTION = PUSH TITLE -->
-        <p class="superFont" id="ahoyPushTitle"></p>
-
-
-    </div>
-
-<!-- -->
-<!-- -->
-<!-- -->
-
-
-
-    </div>
-
-    <div class="innerAHOYBoxMenu">
-        <p class="superFont">
-           <div class="ahoyMiniMenu">
-              </div>
-           </div>
-        </p>
-        </div>
 
 </div>
 
-
-<div id="minitoTheRight">
-    <!-- LINE 1         -->
-    <!-- AHOY PUSH BLOCK TITLE  -->
-
-
-    <!-- LINE 2  :      -->
-    <p class="watchTickerText"><span id="spanTITLE"> Active Feed </span> build 1.0.5c</p>
-      
-   
-
-    <button onclick="location.href='https://app.ahoy.ooo'">Menu</button>
-            <button onclick="location.href='https://watch.ahoy.ooo'">Watch</button>
-            <button onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
-
-    
-    <!-- LINE 3  :  -->
-</div>
-        
-<div id="myDiv" style="height:500px height:500px"></div>
-<script>
-
-function changeAhoyTickerDolor() {
-    document.getElementById("ahoy_ticker").style.background-color = "#ccc";
-    document.getElementById("myDIV").style.backgroundColor = "lightblue";
-
-
-
-}
-</script>
-
-
-
-        </div>
 
 
 
@@ -505,27 +443,29 @@ function changeAhoyTickerDolor() {
 
 <!-- COLUMN 3 -->
 <!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
+
 <!-- COLUMN 3 -->
 
 
 <!-- COL3 LINE 1 -->
 <div class="ahoyTickerColTIME">
-
+    <div class="watchMenuRight">
+    <button class="button" onclick="location.href=''">Menu</button>
+        <button class="activeButton" onclick="location.href='#'">Watch</button>
+    <button class="button" onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
+    <button class="button" onclick="openFullscreen();">Fullscreen Mode</button>
+</div>
 <!-- AHOY PUSH TIME  -->
-    <p class="superFont" id="ahoyPushTime"></p>
+<br><!--VERY IMPORTANT _ SHOW THE FUNCTION = PUSH TITLE -->
 
+<!--VERY IMPORTANT _ SHOW THE FUNCTION = PUSH TITLE -->   
 <!-- TIME DISPLAY -->
-<!-- TIME DISPLAY -->
-    <span id="span"></span>
+<!-- TIME DISPLAY --><p id="ahoyPushTime"></p>
+<p class="superFont">The time is aka <span id="span"></span>  Playing = Playblock 8</p>
+
  <!-- END OF TIME DISPLAY -->
   <!-- END OF TIME DISPLAY -->
+
 
             
 <!-- LIVE CLOCK -->
