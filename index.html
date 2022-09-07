@@ -9,11 +9,9 @@
 
     
     
-    <title>Ahoy Indie Media - Alive Watch Build 1.0.5d</title>
+    <title>Ahoy Indie Media - Alive Watch Build 1.0.6a</title>
        
 <style>
-
-
 
 
  @import url('https://fonts.googleapis.com/css?family=Rubik');
@@ -26,7 +24,6 @@
     padding:5px;
 
 }
-
 
 
 
@@ -96,6 +93,9 @@ button:hover {
 
 }
 
+  /* AHOY TICKER STYLE  */
+
+
 .ahoy_ticker {
     position: fixed;
 
@@ -121,7 +121,7 @@ overflow:none;
  /* Create three equal columns that floats next to each other */
  .ahoyTickerCol {
           float: left;
-          width: 5%;
+          width: 25%;
          min-height:100%;
           padding: 5px;
           background-color: #0b030c97;
@@ -130,22 +130,22 @@ overflow:none;
         }
         .ahoyTickerCol:hover {
           float: left;
-          width: 5%;
+          width: 25%;
          min-height:100%;
           padding: 5px;
-          background-color: #f9c9ff00;
+          background-color: #0b030c97;
           max-width: 25%;
 
         }
 
         .ahoyTickerColMIDDLE {
           float: left;
-          width: 60%;
+          width: 40%;
           min-height: 100%;
           padding: 10px;
           font-family: "Rubik";
           text-align:center;
-          background-color: #e94dfe00;
+          background-color: #0b030c97; 
 
 
         }
@@ -153,7 +153,7 @@ overflow:none;
         
 
         .ahoyTickerColTIME {
-            background-color:#e418ff00;
+            background-color: #0b030c97;
           float: left;
           min-height: 100%;
           width: 31%;
@@ -188,11 +188,36 @@ overflow:none;
   margin-right: 10px;
   width: 100px;
   height:auto;
+  float:left;
 
 }
 
 img:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+  /* END OF AHOY TICKER STYLE  */
+
+
+    /* START OF OF AHOY IFRAME PLAYER STYLE  */
+
+  .wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 0px;
+    height: 0;
+    border: white;
+}
+.wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: black;
+    border-style: solid;
+    border-width: 5px;
 }
 
 #spanTITLE
@@ -222,21 +247,20 @@ img:hover {
 html {
     position: relative;
     min-width: 1024px;
+    min-height: 576px;
 
-    height: 50%;
 }
     
 
 
 .wrapper {
-    position: relative;
+
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 0px;
-    height: 0;
     border: white;
 }
 .wrapper iframe {
-    position: absolute;
+
     top: 0;
     left: 0;
     right: 0;
@@ -258,6 +282,16 @@ html {
     font-family: rubik;
     color:rgba(255, 244, 244, 0.892);
     text-transform: uppercase;
+
+}
+
+.superFontplayBlock {
+    font-weight: 800;
+    font-size: 14px;
+    font-family: rubik;
+    color:rgba(255, 255, 255, 0.949);
+    text-transform: uppercase;
+
 
 }
 
@@ -423,7 +457,7 @@ html {
 <!-- COLUMN 2 -->
 
 <div class="ahoyTickerColMIDDLE">
-    <p class="superFont" id="ahoyPushTitle"></p>
+
 
 
 </div>
@@ -449,26 +483,37 @@ html {
 
 <!-- COL3 LINE 1 -->
 <div class="ahoyTickerColTIME">
+
+
+    <!-- AHOY RIGHT MENU -->
+<!-- AHOY RIGHT MENU -->
+
     <div class="watchMenuRight">
     <button class="button" onclick="location.href='https://ahoy.ooo'">Menu</button>
         <button class="activeButton" onclick="location.href='#'">Watch</button>
     <button class="button" onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
     <button class="button" onclick="openFullscreen();">Fullscreen Mode</button>
 </div>
-<!-- AHOY PUSH TIME  -->
+<!-- AHOY RIGHT MENU -->
+
+
 <br><!--VERY IMPORTANT _ SHOW THE FUNCTION = PUSH TITLE -->
 
-<!--VERY IMPORTANT _ SHOW THE FUNCTION = PUSH TITLE -->   
+
 <!-- TIME DISPLAY -->
-<!-- TIME DISPLAY --><p id="ahoyPushTime"></p>
-<p class="superFont">The time is aka <span id="span"></span>  Playing = Playblock 8</p>
+<!-- TIME DISPLAY -->   
+<!--VERY IMPORTANT _ SHOW THE FUNCTION = PUSH TITLE -->   
+ <p class="superFont" id="ahoyPushTitle"></p>
+ <!-- AHOY PUSH TIME  -->
+ <p id="ahoyPushTime"></p>
+<p class="superFontplayBlock"><span id="span"></span></p>
 
  <!-- END OF TIME DISPLAY -->
   <!-- END OF TIME DISPLAY -->
 
 
             
-<!-- LIVE CLOCK -->
+<!-- LIVE CLOCK CODE -->
 <script>
 var span = document.getElementById('span');
 
@@ -551,22 +596,22 @@ setInterval(time, 1000);
 // BLOCK 1 = 7AM to 10AM - All times should play "playBlock1"
        
         if (hr == 7) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 7AM";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 1";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 7AM";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 1";
         document.getElementById('ahoyPlayer').src = playBlock1;
        // alert("It is 7AM - playblock 1 should load"); 
     }
 
         if (hr == 8) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 8AM";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 1";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 8AM";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 1";
         document.getElementById('ahoyPlayer').src = playBlock1;
         //alert("It is 8AM - playblock 1 should load"); 
     }
 
         if (hr == 9) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 9AM";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 1";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 9AM";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 1";
         document.getElementById('ahoyPlayer').src = playBlock1;
         //alert("It is 9AM - playblock 1 should load"); 
     }
@@ -576,23 +621,22 @@ setInterval(time, 1000);
 
 
         if (hr == 10) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 10AM";
-        document.getElementById("ahoyPushTime2").innerHTML = "Time is 10AM";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 2";
+       // document.getElementById("ahoyPushTime").innerHTML = "Time is 10AM";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 2";
         document.getElementById('ahoyPlayer').src = playBlock2;
         //alert("It is 10AM - playblock 2 should load"); 
     }
 
         if (hr == 11) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 11AM";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 2";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 11AM";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 2";
         document.getElementById('ahoyPlayer').src = playBlock2;
         //alert("It is 11AM - playblock 2 should load");
      }
 
         if (hr == 12) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 12AM";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 2";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 12AM";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 2";
         document.getElementById('ahoyPlayer').src = playBlock2;
         //alert("It is 12PM - playblock 2 should load"); 
     }
@@ -601,22 +645,22 @@ setInterval(time, 1000);
 
 
         if (hr == 13) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 1PM";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 3";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 1PM";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 3";
         document.getElementById('ahoyPlayer').src = playBlock3;
         //alert("It is 1pm - playblock 3 should load"); 
     }
 
         if (hr == 14) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 2PM";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 3";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 2PM";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 3";
         document.getElementById('ahoyPlayer').src = playBlock3;
         //alert("It is 2pm - playblock 3 should load"); 
     }
 
         if (hr == 15) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 3PM";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 3";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 3PM";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 3";
         document.getElementById('ahoyPlayer').src = playBlock3;
         //alert("It is 3pm - playblock 3 should load"); 
     }
@@ -627,8 +671,8 @@ setInterval(time, 1000);
 
 
         if (hr == 16) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 4pm";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 4";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 4pm";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 4";
         document.getElementById('ahoyPlayer').src = playBlock4;
         //alert("It is 4pm - playblock 4 should load"); 
     }
@@ -636,14 +680,14 @@ setInterval(time, 1000);
 
 
     if (hr == 17) {
-            document.getElementById("ahoyPushTime").innerHTML = "Time is 5pm";
-            document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 4";
+            //document.getElementById("ahoyPushTime").innerHTML = "Time is 5pm";
+            document.getElementById("ahoyPushTitle").innerHTML = "playBlock 4";
             document.getElementById('ahoyPlayer').src = playBlock4;
         }
 
     if (hr == 18) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 6pm";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 4";
+       // document.getElementById("ahoyPushTime").innerHTML = "Time is 6pm";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 4";
         document.getElementById('ahoyPlayer').src = playBlock4;
     }
 
@@ -652,80 +696,80 @@ setInterval(time, 1000);
 // Block 5 = 7PM to 10PM All times should play "playBlock5"
 
 if (hr == 19) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 7pm";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 5";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 7pm";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 5";
         document.getElementById('ahoyPlayer').src = playBlock5;
     }
 
     if (hr == 20) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 8pm";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 5";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 8pm";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 5";
         document.getElementById('ahoyPlayer').src = playBlock5;
     }
 
     if (hr == 21) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 9pm";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 5";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 9pm";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 5";
         document.getElementById('ahoyPlayer').src = playBlock5;
     }
 
     // Block 6 = Block 6 = 10PM to 1AM All times should play "playBlock6"
 
     if (hr == 22) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 10pm";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 6";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 10pm";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
         document.getElementById('ahoyPlayer').src = playBlock6;
     }
 
     if (hr == 23) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 11pm";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 6";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 11pm";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
         document.getElementById('ahoyPlayer').src = playBlock6;
     }
 
     if (hr == 24) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 12 am";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 6";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 12 am";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
         document.getElementById('ahoyPlayer').src = playBlock6;
     }
 
     // Block 7 = Block 7 = 1AM to 4AM "playBlock7"
 
     if (hr == 1) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 1AM";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 7";
+       // document.getElementById("ahoyPushTime").innerHTML = "Time is 1AM";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 7";
         document.getElementById('ahoyPlayer').src = playBlock7;
     }
 
     if (hr == 2) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 2am";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 7";
+       // document.getElementById("ahoyPushTime").innerHTML = "Time is 2am";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 7";
         document.getElementById('ahoyPlayer').src = playBlock7;
     }
 
     if (hr == 3) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 3am";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 7";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 3am";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 7";
         document.getElementById('ahoyPlayer').src = playBlock7;
     }
 
     // Block 8 = Block 8 = 4AM to 7AM "playBlock8"
 
     if (hr == 4) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 4AM";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 8";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 4AM";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 8";
         document.getElementById('ahoyPlayer').src = playBlock8;
     }
 
     if (hr == 5) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 5am";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 8";
+       // document.getElementById("ahoyPushTime").innerHTML = "Time is 5am";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 8";
         document.getElementById('ahoyPlayer').src = playBlock8;
     }
 
     if (hr == 6) {
-        document.getElementById("ahoyPushTime").innerHTML = "Time is 6am";
-        document.getElementById("ahoyPushTitle").innerHTML = "Should play playBlock 8";
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 6am";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 8";
         document.getElementById('ahoyPlayer').src = playBlock8;
     }
 
@@ -742,7 +786,12 @@ if (hr == 19) {
 <!-- SUPER SUPER SUPER SUPER -->
 <!-- SUPER SUPER SUPER SUPER -->
 
-<!-- -->
+<!-- FULL BUTTON SCREEN CODE -->
+<!-- FULL BUTTON SCREEN CODE -->
+<!-- FULL BUTTON SCREEN CODE -->
+
+<!-- FULL BUTTON SCREEN CODE -->
+
 <script>
     var elem = document.getElementById("ahoyPlayer");
     function openFullscreen() {
