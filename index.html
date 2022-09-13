@@ -1,7 +1,7 @@
 <html>
 <head>
 <!-- INSTALLS -->
-
+<script src="jquery-3.6.0.min.js"></script>
 <!-- PLUGINS -->
 <!-- PLUGIN #1 = FONT AWESOME PLUGIN -->
 <script src="https://kit.fontawesome.com/f7c1ebf58b.js" crossorigin="anonymous"></script>
@@ -202,12 +202,14 @@ img:hover {
   /* END OF AHOY TICKER STYLE  */
 
 
+
+  
     /* START OF OF AHOY IFRAME PLAYER STYLE  */
 
-  .wrapper {
+    .wrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 0px;
+    padding-top: 25px;
     height: 0;
     border: white;
 }
@@ -222,6 +224,9 @@ img:hover {
     border-style: solid;
     border-width: 5px;
 }
+
+
+
 
 #spanTITLE
 { 
@@ -247,12 +252,7 @@ img:hover {
             text-transform: uppercase;
 }
 
-html {
-    position: relative;
-    min-width: 1024px;
-    min-height: 576px;
 
-}
     
 
 
@@ -273,6 +273,9 @@ html {
     border-style: solid;
     border-width: 5px;
 }
+
+
+
 
 .ahoyTimeDiv {
     padding: 5px;
@@ -381,6 +384,26 @@ html {
     height: 55px;
 }
 
+
+#rngVolume{display: none;}
+
+
+ #rngVolume {
+  font-size: 8px;
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  border: 2px solid var(--input-border);
+  color:#0000004b;
+  background: linear-gradient(to right, #82CFD0 0%, #82CFD0 50%, #fff 50%, #fff 100%);
+  border: solid 1px #82CFD0;
+  border-radius: 8px;
+  height: 7px;
+  width: 356px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
 </style>
 </head>
 
@@ -396,7 +419,7 @@ html {
 <!-- Video Player itself L-->
 
 <div class="wrapper">
-    <iframe id="ahoyPlayer" class="wrapper iframe" src="https://cdn.jwplayer.com/players/zj3nmkYz-xwwQ9uP0.html">
+    <iframe id="ahoyPlayer" class="wrapper iframe" src="https://cdn.jwplayer.com/players/zj3nmkYz-xwwQ9uP0.html" width="100%" height="100%" frameborder="0" scrolling="auto" title="playBlock 5 B" style="position:absolute;" stretching="fill">
     </iframe>
 </div>
 
@@ -463,7 +486,18 @@ html {
 <div class="ahoyTickerColMIDDLE">
 
 <!-- Pontential Middle Content Goes here -->
+<input type="range" id="rngVolume" min="0" max="1" step=".01" value=".5"/>  
+<br><input type="range" id="rngVolume" min="0" max="1" step=".01" value=".5"/>  
+<br><input type="range" id="rngVolume" min="0" max="1" step=".01" value=".5"/>  
 
+<script>
+    $('#rngVolume').on("slidestop", function(){  
+                    var volume = document.getElementById('rngVolume').value;  
+                    console.log(volume);  
+                    player.volume = volume;  
+                      
+});  
+</script>
 
 </div>
 
@@ -600,8 +634,8 @@ setInterval(time, 1000);
         //newLet
 
         let playBlock1a = "https://cdn.jwplayer.com/players/w4LWEPfF-xwwQ9uP0.html";
-        let playBlock1b = 
-        let playBlock1c =
+        //let playBlock1b = 
+        //let playBlock1c =
 
         let playBlock2a = "https://cdn.jwplayer.com/players/zjygbzug-xwwQ9uP0.html";
         //let playBlock2b =
