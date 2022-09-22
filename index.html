@@ -19,7 +19,7 @@
 
     
     
-    <title>Ahoy Indie Media - Alive Watch Build 1.0.7D</title>
+    <title>Ahoy Indie Media - W 1.0.7F</title>
        
 <style>
 
@@ -83,7 +83,6 @@ button:hover {
     border: none;
     cursor:pointer;
 
-
 }
 
 .activeButton {
@@ -98,8 +97,6 @@ button:hover {
     cursor:pointer;
     border:1px;
     border-color: wheat;
-
-
 
 }
 
@@ -161,10 +158,7 @@ overflow:none;
         }
 
        
-        
-
-        
-
+    
         .ahoyTickerColTIME {
             background-color: #0b030c97;
           float: left;
@@ -873,7 +867,7 @@ setInterval(time, 1000);
 
 
 
-// BLOCK 4 = 4pm - 7pm  - All times should play "playBlock4"
+// BLOCK 4 = 4pm - 5pm  - All times should play "playBlock4"
 
 
         if (hr == 16) {
@@ -898,8 +892,9 @@ setInterval(time, 1000);
     }
 
 
-
-// Block 5 = 7PM to 10PM All times should play "playBlock5"
+// Block 5 = 7PM to 12PM All times should play "playBlock5"
+// Block 5 = 7PM to 12PM All times should play "playBlock5"
+// Block 5 = 7PM to 12PM All times should play "playBlock5"
 
 if (hr == 19) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 7pm";
@@ -919,64 +914,67 @@ if (hr == 19) {
         document.getElementById('ahoyPlayer').src = playBlock5c;
     }
 
-    // Block 6 = Block 6 = 10PM to 1AM All times should play "playBlock6"
+   
 
     if (hr == 22) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 10pm";
-        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 5c";
         document.getElementById('ahoyPlayer').src = playBlock5c;
     }
 
     if (hr == 23) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 11pm";
-        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 5c";
         document.getElementById('ahoyPlayer').src = playBlock5c;
     }
 
     if (hr == 24) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 12 am";
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
-        document.getElementById('ahoyPlayer').src = playBlock5c;
+        document.getElementById('ahoyPlayer').src = playBlock6;
     }
 
-    // Block 7 = Block 7 = 1AM to 4AM "playBlock7"
+     // Block 6 = Block 6 = 12PM to 3AM All times should play "playBlock6"
+ 
 
     if (hr == 1) {
        // document.getElementById("ahoyPushTime").innerHTML = "Time is 1AM";
-        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 7";
-        document.getElementById('ahoyPlayer').src = playBlock5c;
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
+        document.getElementById('ahoyPlayer').src = playBlock6;
     }
 
     if (hr == 2) {
        // document.getElementById("ahoyPushTime").innerHTML = "Time is 2am";
-        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 7";
-        document.getElementById('ahoyPlayer').src = playBlock5c;
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
+        document.getElementById('ahoyPlayer').src = playBlock6;
     }
 
     if (hr == 3) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 3am";
-        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 7";
-        document.getElementById('ahoyPlayer').src = playBlock5c;
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
+        document.getElementById('ahoyPlayer').src = playBlock6;
     }
 
-    // Block 8 = Block 8 = 4AM to 7AM "playBlock8"
+
+// Block 7 = Block 7 = 3AM to 5AM "playBlock7"
+
 
     if (hr == 4) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 4AM";
-        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 8";
-        document.getElementById('ahoyPlayer').src = playBlock8;
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 7";
+        document.getElementById('ahoyPlayer').src = playBlock7;
     }
 
     if (hr == 5) {
        // document.getElementById("ahoyPushTime").innerHTML = "Time is 5am";
-        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 8";
-        document.getElementById('ahoyPlayer').src = playBlock8;
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 7";
+        document.getElementById('ahoyPlayer').src = playBlock7;
     }
 
     if (hr == 6) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 6am";
-        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 8";
-        document.getElementById('ahoyPlayer').src = playBlock8;
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 1";
+        document.getElementById('ahoyPlayer').src = playBlock1;
     }
 
 
