@@ -17,13 +17,16 @@
 <script src="https://kit.fontawesome.com/f7c1ebf58b.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 
-    
-    
-    <title>Ahoy Indie Media - W 1.0.7G</title>
+       
+    <title>Ahoy Indie Media - W 1.0.8b</title>
        
 <style>
 
  @import url('https://fonts.googleapis.com/css?family=Rubik');
+
+
+ .MOBILEmenuMENU {display:none;}
+ .MOBILEannouncement {display:none;}
 
  body {
     background-color: #0B030C;
@@ -33,7 +36,13 @@
 
 }
 
+/*CSS START UP ENGINE *//
 
+
+
+/*.newTonight {
+    display:none;
+} */
 
 span {
     margin:0px;
@@ -184,8 +193,6 @@ overflow:none;
             font-size:14px;
         }
 
-        
-
 .imgAhoyLogo {
   border: 11px solid rgba(221, 221, 221, 0.016);
   border-radius: 4px;
@@ -271,12 +278,10 @@ img:hover {
     right: 0;
     width: 100%;
     height: 100%;
-    border: black;
+
     border-style: solid;
     border-width: 5px;
 }
-
-
 
 
 .ahoyTimeDiv {
@@ -455,7 +460,8 @@ img:hover {
   transform: translateY(2px);
 }
 
-/* CSS */
+/* CSS 
+
 .button-30 {
   align-items: center;
   appearance: none;
@@ -484,7 +490,7 @@ img:hover {
   white-space: nowrap;
   will-change: box-shadow,transform;
   font-size: 18px;
-}
+} */
 
 .button-30:focus {
   box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
@@ -508,21 +514,189 @@ img:hover {
     padding:5px;
 }
 
-.newTonight {
-    display:none;
+
+
+/*Modular Mobile Menu Import from build103 */
+/*AHOY MOBILE TICKER STYLE */
+
+@media only screen and (max-width: 600px) {
+    .MOBILEmenuMENU {display:block;}
 }
 
+
+
+@media only screen and (max-width: 600px) {
+
+    .MOBILEmenuMENU {
+    display: block;
+    background-color: #faffcb10;
+    min-width:80%;
+    max-width: 350px;
+    min-height:175px;
+    max-height:225px;
+    position:absolute;
+    z-index: 999;
+    top: 82.5%;
+  left: 50%;
+ transform: translate(-50%, -50%); 
+  text-align:center;
+  border-style:solid;
+  border-width: .25em;
+  box-shadow: 0px 0px 6px 0px #8d0050;
+  padding-bottom:15px;
+  
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .buttonMOBILEa {
+    background-color: rgba(38, 0, 255, 0.026);
+    min-width: 95%;
+    min-height:50px;
+    border-style: solid;
+    border-width: .15em;
+    border-color:#ffffff4c;
+    transform: scale(0.8);
+
+    
+    color:rgb(255, 255, 255);
+    text-align:center;
+    font-size:12px;
+    }  
+
+    .buttonMOBILEa:hover {
+    background-color: rgba(38, 0, 255, 0.141);
+    min-width: 95%;
+    min-height:50px;
+    border-style: solid;
+    border-width: .25em;
+    border-color:#ffffff;
+    
+    color:rgb(255, 255, 255);
+    text-align:center;
+    transform: scale(.8);
+    }
+}
+    
+@media only screen and (max-width: 600px) {
+    .ahoy_ticker { display:none; }
+    .ahoyTickerCol { display:none;}
+    .ahoyTickerColMIDDLE {display:none;}
+    .ahoyTickerColTIME {display:none;}
+
+
+    #ahoyMobileTicker {
+        display: block;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+html {
+    position: relative;
+    min-width: auto;
+    min-height: auto;
+
+}
+}
+
+@media only screen and (max-width: 600px) {
+    .innerBox {
+        min-width: 100%;
+    }
+
+    .outerBox {
+        margin:20px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+body { 
+    background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
+    background-size: cover;
+    background-position: 95% -20%;
+    padding:0px;
+        
+       }
+
+    }
+
+    @media only screen and (max-width: 600px) {
+    .wrapper {
+        position:absolute;
+        min-width:100%;
+    z-index: 999;
+    top: 15.5%;
+  left: 0%;
+  border-style:unset;
+  border-width: 0px;
+    }
+    }
+    @media only screen and (max-width: 600px) {
+    .wrapper iframe {
+
+top: 0;
+left: 0;
+right: 0;
+width: 100%;
+height: 100%;
+border-width: 0px;
+padding:0px;
+}
+    }
+
+    @media only screen and (max-width: 600px) {
+/*MOBILE ANNOUNCEMENT */
+.MOBILEannouncement {
+    display:block;
+    background-color: rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff15;
+    color:rgba(255, 255, 255, 0.229);
+    padding:25px;
+    text-align:center;
+    position:absolute;
+    z-index: 999;
+    top: 62.5%;
+  left: 50%;
+ transform: translate(-50%, -50%); 
+}
+
+    }
 
 </style>
 </head>
 
 <body>
   
-<!-- THE MAIN DEAL-->
-<!-- THE MAIN DEAL-->
+<!-- MOBILE ANNOUNCMENT -->
+<div class="MOBILEannouncement">
+    <p style="color:wheat; text-transform: uppercase; font-size: 12px;">New Content Thursday 10.5 - 7PM EST </p>
+    <p style="color:white;">The Rob Show #4 - ApeWorx's own Colleen Holt </p>
+</div>
+
+<!-- AHOY MOBILE TICKER - BUILD 1001 -->
+
+
+<div class="MOBILEmenuMENU">
+    <br> <button class="buttonMOBILEa" onclick="location.href='https://ahoy.ooo'">Menu</button> 
+    <br> <button class="buttonMOBILEa" onclick="location.href='https://watch.ahoy.ooo'">Watch</button>
+    <br> <button class="buttonMOBILEa" onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
+    <br> <button class="buttonMOBILEa" onclick="location.href='https://ahoy.ooo/schedule">Schedule</button>
+    
+ </div>
+ 
+ 
+ <!-- END OF MOBILE TICKER -->
 
 <!-- THE MAIN DEAL-->
-<!-- Video Player itself L-->
+
+
+<!-- THE MAIN DEAL-->
 <!-- Video Player itself L-->
 
 <!-- Video Player itself L-->
@@ -534,33 +708,19 @@ img:hover {
 
 <!-- Video Player itself L-->
 
+
 <!-- END OF THE MAIN DEAL-->
-<!-- END OF THE MAIN DEAL-->
-
-
-
-
-
 
 
 <!-- THE AHOY TICKER-->
 
 <!-- THE AHOY TICKER-->
 <!-- THE AHOY TICKER-->
-
 
 <div class="ahoy_ticker">
 
-
-
     <div class="ahoyTickerColWrap">
-        <!-- COLUMN 1 -->
-                <!-- COLUMN 1 -->
-<!-- COLUMN 1 -->
-<!-- COLUMN 1 -->
-<!-- COLUMN 1 -->
-<!-- COLUMN 1 -->
-<!-- COLUMN 1 -->
+        
 <!-- COLUMN 1 -->
         <div class="ahoyTickerCol">
 
@@ -573,25 +733,8 @@ img:hover {
 
         </div>
 
-
-
-<!-- COLUMN 1 -->
-<!-- COLUMN 1 -->
-<!-- COLUMN 1 -->
 <!-- COLUMN 1 -->
 
-
-
-
-<!-- COLUMN 2 -->
-<!-- COLUMN 2 -->
-<!-- COLUMN 2 -->
-<!-- COLUMN 2 -->
-<!-- COLUMN 2 -->
-
-
-<!-- COLUMN 2 -->
-<!-- COLUMN 2 -->
 <!-- COLUMN 2 -->
 
 <div class="ahoyTickerColMIDDLE">
@@ -602,8 +745,8 @@ img:hover {
 <!-- Pontential Middle Content Goes here -->
 
 <div id="newTonight" class="newTonight">
-    <p style="color:wheat; text-transform: uppercase; font-size: 12px;">New Content Tonight - 7PM EST </p>
-    <p style="color:white;">The Rob Show #3 - Tallboyz's Mr. David Gunn </p>
+    <p style="color:wheat; text-transform: uppercase; font-size: 12px;">New Content Thursday 10.5 - 7PM EST </p>
+    <p style="color:white;">The Rob Show #4 - ApeWorx's own Colleen Holt </p>
 </div>
 
 <!-- Pontential Middle Content Goes here -->
@@ -638,24 +781,11 @@ img:hover {
 </div>
 
 
-
-            <!-- END OF COLUMN 2 -->
+<!-- END OF COLUMN 2 -->
  <!-- END OF COLUMN 2 -->
 
-
-
-
-
 <!-- COLUMN 3 -->
 <!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-<!-- COLUMN 3 -->
-
-
-<!-- COLUMN 3 -->
-
 
 <!-- COL3 LINE 1 -->
 <div class="ahoyTickerColTIME">
@@ -665,10 +795,10 @@ img:hover {
 <!-- AHOY RIGHT MENU -->
 
     <div class="watchMenuRight">
-    <button class="buttonTickerNavSmall" onclick="location.href='https://ahoy.ooo/schedule'">Schedule</button>
     <button class="buttonTickerNavSmall" onclick="location.href='https://ahoy.ooo'">Menu</button>
     <button class="buttonTickerNavSmall" onclick="location.href='https://watch.ahoy.ooo'">Watch</button>
     <button class="buttonTickerNavSmall" onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
+    <button class="buttonTickerNavSmall" onclick="location.href='https://ahoy.ooo/schedule'">Schedule</button>
     <button class="buttonFullScreen" onclick="openFullscreen();">Fullscreen Mode</button>
 </div>
 <!-- AHOY RIGHT MENU -->
@@ -789,6 +919,10 @@ setInterval(time, 1000);
         let playBlock5a = "https://cdn.jwplayer.com/players/PdzRKKiA-xwwQ9uP0.html";
         let playBlock5b = "https://cdn.jwplayer.com/players/r2CLsAB7-puZB4zfJ.html";
         let playBlock5c = "https://cdn.jwplayer.com/players/SyfFOIKw-xwwQ9uP0.html";
+        let playBlock5d = "https://cdn.jwplayer.com/players/HPkC3BmX-puZB4zfJ.html";
+
+        // THE DYNAMIC PLAYBLOCK - THAT SHOULD PLAY ON SATURDAY AND SUNDAY
+        let playBlockDynamicA = "https://cdn.jwplayer.com/players/LnzWaP49-puZB4zfJ.html";
 
 //START THE CLOCK BABY // START AT 7 AM 
 
@@ -846,21 +980,21 @@ setInterval(time, 1000);
         if (hr == 13) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 1PM";
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 3";
-        document.getElementById('ahoyPlayer').src = playBlock3;
+        document.getElementById('ahoyPlayer').src = playBlock3a;
         //alert("It is 1pm - playblock 3 should load"); 
     }
 
         if (hr == 14) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 2PM";
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 3";
-        document.getElementById('ahoyPlayer').src = playBlock3;
+        document.getElementById('ahoyPlayer').src = playBlock3a;
         //alert("It is 2pm - playblock 3 should load"); 
     }
 
         if (hr == 15) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 3PM";
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 3";
-        document.getElementById('ahoyPlayer').src = playBlock3;
+        document.getElementById('ahoyPlayer').src = playBlock3a;
         //alert("It is 3pm - playblock 3 should load"); 
     }
 
@@ -875,7 +1009,6 @@ setInterval(time, 1000);
         document.getElementById('ahoyPlayer').src = playBlock4c;
         //alert("It is 4pm - playblock 4 should load"); 
     }
-
 
 
     if (hr == 17) {
@@ -990,7 +1123,7 @@ if (hr == 19) {
 <!-- SUPER SUPER SUPER SUPER -->
 
 <!-- FULL BUTTON SCREEN CODE -->
-<!-- FULL BUTTON SCREEN CODE -->
+
 <!-- FULL BUTTON SCREEN CODE -->
 
 <!-- FULL BUTTON SCREEN CODE -->
@@ -1007,6 +1140,8 @@ if (hr == 19) {
       }
     }
     </script>
+<!-- END OF FULL BUTTON SCREEN CODE -->
+
 
 </body>
 </html>
