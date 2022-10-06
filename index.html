@@ -13,20 +13,19 @@
 
   gtag('config', 'G-WVDL9N1HDT');
 </script>
-<!-- PLUGIN #1 = FONT AWESOME PLUGIN -->
-<script src="https://kit.fontawesome.com/f7c1ebf58b.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 
        
-    <title>Ahoy Indie Media - W 1.0.8b</title>
+<title>Ahoy Indie Media - W 1.0.8c</title>
        
 <style>
 
  @import url('https://fonts.googleapis.com/css?family=Rubik');
 
+/*CSS START UP ENGINE */
 
  .MOBILEmenuMENU {display:none;}
  .MOBILEannouncement {display:none;}
+ #rngVolume{display: none;}
 
  body {
     background-color: #0B030C;
@@ -36,19 +35,13 @@
 
 }
 
-/*CSS START UP ENGINE *//
-
 
 
 /*.newTonight {
     display:none;
 } */
 
-span {
-    margin:0px;
-    padding:0px;
-}
-p {
+span, p {
     margin:0px;
     padding:0px;
     color:white;
@@ -214,13 +207,13 @@ img:hover {
 
   
     /* START OF OF AHOY IFRAME PLAYER STYLE  */
+        /* START OF OF AHOY IFRAME PLAYER STYLE  */
 
     .wrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-    border: white;
+
+ 
 }
 .wrapper iframe {
     position: absolute;
@@ -228,13 +221,17 @@ img:hover {
     left: 0;
     right: 0;
     width: 100%;
-    height: 100%;
-    border: black;
-    border-style: solid;
-    border-width: 5px;
+    height:100%;
+   
+   
+    
+    
+ 
+    
 }
 
 
+    /* END OF START OF OF AHOY IFRAME PLAYER STYLE  */
 
 
 #spanTITLE
@@ -262,32 +259,13 @@ img:hover {
 }
 
 
-    
-
-
-.wrapper {
-
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 0px;
-    border: white;
-}
-.wrapper iframe {
-
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-
-    border-style: solid;
-    border-width: 5px;
-}
-
 
 .ahoyTimeDiv {
     padding: 5px;
     /*padding-top:  100px; */
 }
+
+/*FONTS FONTS FONTS */
 
 .superFont {
     font-weight: 800;
@@ -295,7 +273,6 @@ img:hover {
     font-family: rubik;
     color:rgba(255, 244, 244, 0.892);
     text-transform: uppercase;
-
 }
 
 .superFontplayBlock {
@@ -304,8 +281,6 @@ img:hover {
     font-family: rubik;
     color:rgba(255, 255, 255, 0.949);
     text-transform: uppercase;
-
-
 }
 
 .superFontTINY {
@@ -314,12 +289,13 @@ img:hover {
     font-family: rubik;
     color:rgba(70, 70, 70, 0.707);
     text-transform: uppercase;
-
 }
 
 .customWhite {
     color:white;
 }
+
+/* END OF FONTS FONTS FONTS */
 
 
 /* AHOY TICKER _ COLUMN A _ WRAPS _ DEFO _ VERTICAL MENU  */
@@ -388,9 +364,6 @@ img:hover {
     background-color: #ccc;
     height: 55px;
 }
-
-#rngVolume{display: none;}
-
 
  #rngVolume {
   font-size: 8px;
@@ -502,7 +475,7 @@ img:hover {
     border-width: 1px;
     border-color: #ffffff15;
     color:rgba(255, 255, 255, 0.229);
-    padding:5px;
+    padding:7.5px;
 }
 
 .newTonight:hover {
@@ -511,32 +484,30 @@ img:hover {
     border-width: 1px;
     border-color: #2424244e;
     color:rgba(255, 255, 255, 0.748);
-    padding:5px;
+    padding:7.5px;
 }
-
-
 
 /*Modular Mobile Menu Import from build103 */
 /*AHOY MOBILE TICKER STYLE */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 755px) {
     .MOBILEmenuMENU {display:block;}
 }
 
 
-
-@media only screen and (max-width: 600px) {
+/*MOBILE MENU */
+@media only screen and (max-width: 755px) {
 
     .MOBILEmenuMENU {
     display: block;
     background-color: #faffcb10;
-    min-width:80%;
-    max-width: 350px;
-    min-height:175px;
-    max-height:225px;
+    min-width:70%;
+    max-width: 320px;
+    min-height:auto;
+    max-height:200px;
     position:absolute;
-    z-index: 999;
-    top: 82.5%;
+    z-index: 1999;
+    top: 80.5%;
   left: 50%;
  transform: translate(-50%, -50%); 
   text-align:center;
@@ -544,16 +515,17 @@ img:hover {
   border-width: .25em;
   box-shadow: 0px 0px 6px 0px #8d0050;
   padding-bottom:15px;
+ 
   
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 755px) {
 
     .buttonMOBILEa {
     background-color: rgba(38, 0, 255, 0.026);
     min-width: 95%;
-    min-height:50px;
+    min-height:30px;
     border-style: solid;
     border-width: .15em;
     border-color:#ffffff4c;
@@ -568,7 +540,7 @@ img:hover {
     .buttonMOBILEa:hover {
     background-color: rgba(38, 0, 255, 0.141);
     min-width: 95%;
-    min-height:50px;
+    min-height:30px;
     border-style: solid;
     border-width: .25em;
     border-color:#ffffff;
@@ -579,7 +551,12 @@ img:hover {
     }
 }
     
-@media only screen and (max-width: 600px) {
+@media (min-width: 500px) and (orientation: landscape) {
+    /* Your style goes here */
+    .MOBILEmenuMENU{display:none;}
+    .MOBILEannouncement{display: none;}
+    }
+@media only screen and (max-width: 755px) {
     .ahoy_ticker { display:none; }
     .ahoyTickerCol { display:none;}
     .ahoyTickerColMIDDLE {display:none;}
@@ -593,7 +570,7 @@ img:hover {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 755px) {
 html {
     position: relative;
     min-width: auto;
@@ -602,7 +579,7 @@ html {
 }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 755px) {
     .innerBox {
         min-width: 100%;
     }
@@ -613,10 +590,12 @@ html {
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
 body { 
-    background-image: url('https://media1.giphy.com/media/wkKyBT94rB196/giphy.gif?cid=ecf05e47b9ypgsrn61em96kw5zberiuv0vmdperhn0uq9ch2&rid=giphy.gif&ct=g');
-    background-size: cover;
+    background-image: url('https://64.media.tumblr.com/acba988d72aa8df3bf7b9e6889146554/tumblr_o9cmskJWKe1vsjcxvo1_1280.gif');
+    background-size: stretch;
+    background-blend-mode: darken;
+    background-color: #00223f;
     background-position: 95% -20%;
     padding:0px;
         
@@ -624,47 +603,86 @@ body {
 
     }
 
-    @media only screen and (max-width: 600px) {
+
+/*MOBILE VIDOE @iphone 8 */
+
+    @media only screen and (max-width: 755px) {
     .wrapper {
-        position:absolute;
-        min-width:100%;
-    z-index: 999;
-    top: 15.5%;
-  left: 0%;
-  border-style:unset;
-  border-width: 0px;
+        position: relative;
+    padding-bottom: 50.25%; /* 16:9 */
+    padding-top: 25px;
+    border: white;
     }
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 755px) {
     .wrapper iframe {
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border-width: 0px;
+        padding:0px;
+        position:relative;
+        }
+            }
 
-top: 0;
-left: 0;
-right: 0;
-width: 100%;
-height: 100%;
-border-width: 0px;
-padding:0px;
-}
+/*MOBILE VIDOE @iphone SE */
+
+@media only screen and (max-width: 340px) {
+    .wrapper {
+        position: relative;
+    padding-bottom: 48.25%; /* 16:9 */
+    padding-top: 25px;
+    border: white;
     }
+    }
+    @media only screen and (max-width: 340px) {
+    .wrapper iframe {
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border-width: 0px;
+        padding:0px;
+        position:relative;
+        }
+            }
 
-    @media only screen and (max-width: 600px) {
+
+
 /*MOBILE ANNOUNCEMENT */
+
+
+    @media only screen and (max-width: 755px) {
+
+
 .MOBILEannouncement {
-    display:block;
-    background-color: rgba(255, 255, 255, 0);
-    border-style: solid;
-    border-width: 1px;
-    border-color: #ffffff15;
-    color:rgba(255, 255, 255, 0.229);
+    display: block;
     padding:25px;
     text-align:center;
-    position:absolute;
-    z-index: 999;
-    top: 62.5%;
-  left: 50%;
- transform: translate(-50%, -50%); 
+    background-color: #000000d7;
+    margin:20px;
+    font-family: rubik;
+    font-size:12px;
+    box-shadow: rgba(45, 35, 66, 0.4);
+    transition: box-shadow .15s,transform .15s;
+
+
+
 }
+
+    }
+
+    @media only screen and (max-width: 801px) {
+.watchMenuRight {
+    font-size: 8px;
+    
+}
+#ahoyPushTitle {display:none;}
+#ahoyPushTime {display:none;}
+#span {display:none;}
 
     }
 
@@ -673,11 +691,7 @@ padding:0px;
 
 <body>
   
-<!-- MOBILE ANNOUNCMENT -->
-<div class="MOBILEannouncement">
-    <p style="color:wheat; text-transform: uppercase; font-size: 12px;">New Content Thursday 10.5 - 7PM EST </p>
-    <p style="color:white;">The Rob Show #4 - ApeWorx's own Colleen Holt </p>
-</div>
+
 
 <!-- AHOY MOBILE TICKER - BUILD 1001 -->
 
@@ -707,7 +721,11 @@ padding:0px;
 </div>
 
 <!-- Video Player itself L-->
-
+<!-- MOBILE ANNOUNCMENT -->
+<div class="MOBILEannouncement">
+    <p style="color:wheat; text-transform: uppercase; font-size: 12px;">New Content <br>Thursday 10.5 - 7PM EST </p>
+    <p style="color:white;">The Rob Show #4 <br> ApeWorx's own Colleen Holt </p>
+</div>
 
 <!-- END OF THE MAIN DEAL-->
 
