@@ -1,0 +1,376 @@
+<html>
+    <head>
+        <title>
+            Schedule build 1001b
+        </title>
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta property="og:title" content="Ahoy Indie Schedule">
+        <meta property="og:type" content="app" />
+        <meta property="og:description" content="Schedule of 24/7 Free - Hand Crafted - Indie Media">
+        <meta property="og:image" content="#">
+        <meta name="twitter:card" content="#">
+<style>
+body 
+{           
+    padding:10px;
+    font: 1em sans-serif;
+
+
+}
+
+/* GRID SETUP */
+.calendar {
+  padding:20px;
+  display: grid;
+  grid-gap: 1px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+/*   padding: 5px; */
+}
+
+.weekly-byhour {
+  /* NAMED LINE NUMBERS (between tracks): 
+        COLS: hour markers + 7 days
+        ROWS: day markers + 24 hours */
+  grid-template-columns: 
+    [time] auto [mon] 1fr [tue] 1fr [wed] 1fr [thu] 1fr [fri] 1fr [sat] 1fr [end-col];
+  grid-template-rows:
+    [day]  auto
+    [h05]  1fr
+    [h06]  1fr
+    [h07]  1fr 
+    [h08]  1fr
+    [h09]  1fr
+    [h10]  1fr 
+    [h11]  1fr 
+    [h12]  1fr 
+    [h13]  1fr 
+    [h14]  1fr 
+    [h15]  1fr 
+    [h16]  1fr 
+    [h17]  1fr 
+    [h18]  1fr 
+    [h19]  1fr 
+    [h20]  1fr 
+    [h21]  1fr 
+    [h22]  1fr 
+    [h23]  1fr 
+    [h00]  1fr 
+    [h01]  1fr 
+    [h02]  1fr 
+    [h03]  1fr 
+    [h04]  1fr 
+    [end-row];
+}
+
+/* GENERAL ITEM SETUP */
+.calendar li {
+  background-color: white;
+  padding: 0.25em;
+  display: inline-block;
+}
+
+/* ITEM TYPES */
+li.day, li.time, li.corner { background-color: hsl(0, 0%, 100%); }
+li.day { text-align: center; }
+li.time { text-align: right; vertical-align: bottom; }
+li.event { background-color: #82caaf; position: absolute; height: 100%; width: 100%; }
+
+/* CATEGORIES */
+.event.work { background-color: #6a71fe; 
+    border-style: solid;
+  border-width: 1px;}
+.event.personal { background-color: #82b4ca; 
+    border-style: solid;
+  border-width: 1px;}
+  .event.blockC { background-color: #417aff; 
+    border-style: solid;
+  border-width: 1px;}
+
+
+/* DAY HEADINGS   row / col */
+.sun { grid-area: day / sun; }
+.mon { grid-area: day / mon; }
+.tue { grid-area: day / tue; }
+.wed { grid-area: day / wed; }
+.thu { grid-area: day / thu; }
+.fri { grid-area: day / fri; }
+.sat { grid-area: day / sat; }
+
+/* TIME HEADINGS  row / col */
+.h00 { grid-area: h00 / time; }
+.h01 { grid-area: h01 / time; }
+.h02 { grid-area: h02 / time; }
+.h03 { grid-area: h03 / time; }
+.h04 { grid-area: h04 / time; }
+.h05 { grid-area: h05 / time; }
+.h06 { grid-area: h06 / time; }
+.h07 { grid-area: h07 / time; }
+.h08 { grid-area: h08 / time; }
+.h09 { grid-area: h09 / time; }
+.h10 { grid-area: h10 / time; }
+.h11 { grid-area: h11 / time; }
+.h12 { grid-area: h12 / time; }
+.h13 { grid-area: h13 / time; }
+.h14 { grid-area: h14 / time; }
+.h15 { grid-area: h15 / time; }
+.h16 { grid-area: h16 / time; }
+.h17 { grid-area: h17 / time; }
+.h18 { grid-area: h18 / time; }
+.h19 { grid-area: h19 / time; }
+.h20 { grid-area: h20 / time; }
+.h21 { grid-area: h21 / time; }
+.h22 { grid-area: h22 / time; }
+.h23 { grid-area: h23 / time; }
+
+.mainWrapSchedule {
+    background-color: black;
+
+}
+
+
+        </style>
+    </head>
+    <body>
+
+
+        <div class="mainWrapSchedule">
+       <!-- Non-responsive (yet); Just a small sample of what's possible with CSS Grid. -->
+
+<ul class="calendar weekly-byhour">
+    <!--  EVENT NODES  -->
+    <!--  DATA:      CATEGORY                         DAY              START  /  END     EVENT DETAILS  -->
+    <li class="event work"      style="grid-column:   mon;   grid-row:  h08   /  h11;  ">Finish this calendar</li>
+    <li class="event work"      style="grid-column:   wed;   grid-row:  h10   /  h19;  ">Master the grid!</li>
+    <li class="event personal"  style="grid-column:   fri;   grid-row:  h16   /  h23;  ">After work drinks</li>
+    <li class="event personal"  style="grid-column:   tue;   grid-row:  h18   /  h20;  ">Soccer game</li>
+
+    <li class="event personal"  style="grid-column:   mon;   grid-row:  h07   /  h10;  ">playBlock 1a</li>
+    <li class="event personal"  style="grid-column:   tue;   grid-row:  h07   /  h10;  ">playBlock 1b</li>
+    <li class="event blockC"  style="grid-column:   wed;   grid-row:  h07   /  h10;  ">playBlock 1c</li>
+
+    <li class="event personal"  style="grid-column:   mon;   grid-row:  h10   /  h12;  ">playBlock 2a</li>
+    <li class="event personal"  style="grid-column:   tue;   grid-row:  h10   /  h12;  ">playBlock 2b</li>
+    <li class="event blockC"  style="grid-column:   wed;   grid-row:  h10   /  h12;  ">playBlock 2c</li>
+
+    <li class="event personal"  style="grid-column:   mon;   grid-row:  h13   /  h17;  ">playBlock 3a</li>
+    <li class="event personal"  style="grid-column:   tue;   grid-row:  h13   /  h17;  ">playBlock 3b</li>
+    <li class="event blockC"  style="grid-column:   wed;   grid-row:  h13   /  h17;  ">playBlock c</li>
+    <li class="event personal"  style="grid-column:   thu;   grid-row:  h13   /  h17;  ">playBlock a</li>
+    <li class="event blockC"  style="grid-column:   fri;   grid-row:  h13   /  h17;  ">playBlock c</li>
+
+
+    <li class="event work"      style="grid-column:   thu;   grid-row:  h18   /  h20;  ">playBlock 5c</li>
+    <li class="event work"      style="grid-column:   fri;   grid-row:  h19   /  h22;  ">playBlock 5c <br> Ahoy Indie Now with Rob Meglio <br> Guest Dave Gunn <br> Premiere </li>
+    <li class="event work"      style="grid-column:   tue;   grid-row:  h19   /  h22;  ">playBlock 5b</li>
+    <li class="event work"      style="grid-column:   wed;   grid-row:  h19   /  h22;  ">playBlock 5a</li>
+    
+    <!--  DAYS OF THE WEEK  -->
+    <!-- <li class="day sun">Sun</li> -->
+    <li class="day mon">Mon</li>
+    <li class="day tue">Tue</li>
+    <li class="day wed">Wed</li>
+    <li class="day thu">Thu</li>
+    <li class="day fri">Fri</li>
+    <li class="day sat">Sat</li>
+    
+    <!--  TIMES OF THE DAY  -->
+  
+    <li class="time h07">7a</li>
+    <li class="time h08">8a</li>
+    <li class="time h09">9a</li>
+    <li class="time h10">10a</li>
+    <li class="time h11">11a</li>
+    <li class="time h12">12p</li>
+    <li class="time h13">1:00 pm</li>
+    <li class="time h14">2:00 pm</li>
+    <li class="time h15">3:00 pm</li>
+    <li class="time h16">4:00 pm</li>
+    <li class="time h17">5:00 pm</li>
+    <li class="time h18">6:00 pm</li>
+    <li class="time h19">7:00 pm</li>
+    <li class="time h20">8:00 pm</li>
+    <li class="time h21">9:00 pm</li>
+    <li class="time h22">10:00 pm</li>
+    <li class="time h23">11:00 pm</li>
+  
+    <!--  TOP LEFT CORNER FILLER  -->
+    <li class="corner"></li>
+    
+    <!--  EMPTY HOURLY FILLERS:
+      Helps us show the grid template lines, and create calendar funtionality later. One for every hour
+      cell (7 * 24), because our events are "position:absolute" and will sit over top of empty cells -->
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+    </body>
+</html>
