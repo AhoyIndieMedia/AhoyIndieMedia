@@ -3,13 +3,16 @@
 <!-- META META META -->
     <meta name="viewport" 
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta property="og:title" content="Watch - Ahoy Indie Media">
+    <meta property="og:title" content="Watch, Ahoy Indie Media">
     <meta property="og:type" content="app" />
-    <meta property="og:description" content="24/7 Free - Hand Crafted - Indie Media">
+    <meta property="og:description" content="24/7 Free Hand Crafted - Indie Media">
     <meta property="og:image" content="#">
     <meta name="twitter:card" content="Ahoy Indie Media">
 <!-- INSTALLS -->
 <script src="jquery-3.6.0.min.js"></script>
+<!-- STYLE SHEET -->
+<link rel="stylesheet" href="watch.css">
+
 <!-- PLUGINS -->
 <!--Lyctics -->
 <!-- Google tag (gtag.js) -->
@@ -22,723 +25,13 @@
   gtag('config', 'G-WVDL9N1HDT');
 </script>
       
-<title>Ahoy Indie Media - Watch </title>
-<style>
-
- @import url('https://fonts.googleapis.com/css?family=Rubik');
-
-/*CSS START UP ENGINE */
-
- .MOBILEmenuMENU {display:none;}
- .MOBILEannouncement {display:none;}
- #rngVolume{display: none;}
-
- body {
-    background-color: #0B030C;
-    max-height:1000px;
-    overflow: hidden;
-    padding:5px;
-
-}
-
-
-/*FONTS FONTS FONTS */
-
-.superFont {
-    font-weight: 800;
-    font-size: 11px;
-    font-family: rubik;
-    color:rgba(255, 244, 244, 0.892);
-    text-transform: uppercase;
-}
-
-.superFontplayBlock {
-    font-weight: 800;
-    font-size: 14px;
-    font-family: rubik;
-    color:rgba(255, 255, 255, 0.949);
-    text-transform: uppercase;
-}
-
-.superFontTINY {
-    font-weight: 400;
-    font-size: 21px;
-    font-family: rubik;
-    color:rgba(70, 70, 70, 0.707);
-    text-transform: uppercase;
-}
-
-.customWhite {
-    color:white;
-}
-
-/* END OF FONTS FONTS FONTS */
-
-/*.newTonight {
-    display:none;
-} */
-
-span, p {
-    margin:0px;
-    padding:0px;
-    color:white;
-}
-
- .lowerMenuMenu {
-    border-color:white;
-    border-width: 20px;
- }
-
-.watchTickerText {
-    font-size:10px;
-    text-align:center;
-    text-transform: uppercase;
-}
-
-button{
-    background-color:#cecece;
-    color:white;
-    font-size:12px;
-    font-family:rubik;
-    text-decoration: none;
-    text-transform: uppercase;
-    height:30px;
-    background: transparent;
-    border: none;
-    cursor:pointer;
-
-}
-
-button:hover {
-    background-color:#4f4f4f;
-    color:white;
-    font-size:12px;
-    font-family:rubik;
-    text-decoration: none;
-    text-transform: uppercase;
-    height:30px;
-    border: none;
-    cursor:pointer;
-
-}
-
-.activeButton {
-    background-color:#23c8ff4b;
-    color:white;
-    font-size:12px;
-    font-family:rubik;
-    text-decoration: none;
-    text-transform: uppercase;
-    height:30px;
-    border: none;
-    cursor:pointer;
-    border:1px;
-    border-color: wheat;
-
-}
-
-  /* AHOY TICKER STYLE  */
-
-
-.ahoy_ticker {
-    position: fixed;
-
-  left: 1%;
-  /*top: auto; */
-  right: 1%;
-  /* BOTTOM IS WHERE YOU CAN CHANGE THE POSITION  */
-  bottom: 1.5%;
-  width: 98%;
-  height: 90px;
-    /* OVERFLOW SETTINGS */
-overflow:none;
-  overflow-y: hidden;
-  background-color: #0000004b;
-  outline-color: #FFFFBC;
-  outline-offset: 0px;
-  outline-style: solid;
-  outline-width: 1px;
-  vertical-align: auto;
-
-}
- /* Create three equal columns that floats next to each other */
- .ahoyTickerCol {
-          float: left;
-          width: 25%;
-             min-height:100%;
-          padding: 5px;
-          background-color: #0b030c97;
-          max-width: 25%;
-
-
-        }
-        .ahoyTickerCol:hover {
-          float: left;
-          width: 25%;
-         min-height:100%;
-          padding: 5px;
-          background-color: #0b030c97;
-          max-width: 25%;
-
-        }
-
-        .ahoyTickerColMIDDLE {
-          float: left;
-          width: 40%;
-          min-height: 100%;
-          padding: 10px;
-          font-family: "Rubik";
-          text-align:center;
-          background-color: #0b030c97; 
-
-
-        }
-
-       
-    
-        .ahoyTickerColTIME {
-            background-color: #0b030c97;
-          float: left;
-          min-height: 100%;
-          width: 31%;
-          padding-top: 5px;
-          padding-bottom: 20px;
-          font-family: "rubik";
-          text-align: right;
-          left: 50%;
-            top: 50%;
-
-
-        }
-
-        .ahoyTickerColWrap
-        {
-            width: 100%;
-            align-items: top;
-            text-align:center;
-         }
-
-        .ayeTitle {
-            font-weight:500;
-            font-size:14px;
-        }
-
-.imgAhoyLogo {
-  border: 11px solid rgba(221, 221, 221, 0.016);
-  border-radius: 4px;
-  padding: 5px;
-  margin-right: 10px;
-  width: 100px;
-  height:auto;
-  float:left;
-
-}
-
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
-  /* END OF AHOY TICKER STYLE  */
-
-
-
-  
-    /* START OF OF AHOY IFRAME PLAYER STYLE  */
-        /* START OF OF AHOY IFRAME PLAYER STYLE  */
-
-    .wrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-
- 
-}
-.wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height:100%;
-}
-
-
-    /* END OF START OF OF AHOY IFRAME PLAYER STYLE  */
-
-
-#spanTITLE
-{ 
-    font-family:Rubik, serif;
-            font-weight: 300;
-            font-size:11px;
-            text-align:center;
-            padding-top:10px;
-            padding-bottom:10px;
-            color:#ff5e9c;
-            text-transform: uppercase;
-}
-
-#spanTITLEmiddle
-{
-    font-family:Rubik, serif;
-            font-weight: 900;
-            font-size:32px;
-            text-align:center;
-            padding-top:10px;
-            padding-bottom:10px;
-            color:#ff5e9c;
-            text-transform: uppercase;
-}
-
-
-
-.ahoyTimeDiv {
-    padding: 5px;
-    /*padding-top:  100px; */
-}
-
-
-
-
-/* AHOY TICKER _ COLUMN A _ WRAPS _ DEFO _ VERTICAL MENU  */
-.innerAHOYBoxMenu {
-    background: #002d5514;
-    box-shadow: 0px 0px 6px 0px #a5a5a500;
-    border-radius: 5px;
-    text-align: center;
-
-}
-
-.innerAHOYBoxMenuMIDDLE {
-    background: #1190ff00;
-    width:100%;
-    min-height:75px;
-    text-align: center;
-    display: block;
-    
-}
-
-.outerAHOYBoxMenu {
-
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    box-shadow: 0px 0px 6px 0px #a5a5a500;
-    border-radius: 5px;
-    max-height:70px;
-    overflow:hidden;
-}
-
-
-.ahoyMiniMenu {
-
-    display: block;
-
-}
-
-.ahoyMiniMenuMiddle {
-    display: block;
-    background-color: rgba(204, 204, 204, 0) ;
-}
-
-.btn-group .button {
-  background-color: #4c86af00; /* Green */
-  border: 1px solid rgb(24, 255, 232);
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  cursor: pointer;
-  width: 150px;
-  display: block;
-}
-
-.btn-group .button:not(:last-child) {
-  border-bottom: none; /* Prevent double borders */
-}
-
-.btn-group .button:hover {
-  background-color: #109bff3f;
-}
-
-.watchMiniDisplay_Desktop {
-    background-color: #ccc;
-    height: 55px;
-}
-
- #rngVolume {
-  font-size: 8px;
-  font-family: inherit;
-  padding: 0.25em 0.5em;
-  border: 2px solid var(--input-border);
-  color:#0000004b;
-  background: linear-gradient(to right, #82CFD0 0%, #82CFD0 50%, #fff 50%, #fff 100%);
-  border: solid 1px #82CFD0;
-  border-radius: 8px;
-  height: 7px;
-  width: 356px;
-  outline: none;
-  transition: background 450ms ease-in;
-  -webkit-appearance: none;
-}
-
-.buttonTickerNavSmall { 
-    background-color: rgba(245, 222, 179, 0.006);
-    
-}
-
-.buttonTickerNavSmall:hover { 
-    background-color: rgba(245, 222, 179, 0);
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  
-}
-
-.buttonTickerNavSmall:active { 
-    background-color: rgba(245, 222, 179, 0);
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  
-}
-.buttonTickerNavSmall:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-}
-
-
-.buttonFullScreen {
-    background-color: #0000004b;
-}
-
-.buttonFullScreen:hover { 
-    background-color: rgba(255, 255, 255, 0.877);
-  transform: translateY(-1px);
-  color:rgba(0, 0, 0, 0.476);
-}
-
-.button:active { 
-    background-color: rgba(245, 222, 179, 0);
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  
-  transition: transform: translateY(-1px);
-}
-
-
-
-.button-30:hover {
-    box-shadow: #D6D6E7 0 3px 7px inset;
-      transform: translateY(-2px);
-      transition: width 2s;
-      
-}
-
-.button-30:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
-  transform: translateY(2px);
-}
-
-/* CSS 
-
-.button-30 {
-  align-items: center;
-  appearance: none;
-  background-color: #FCFCFD;
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #36395A;
-  cursor: pointer;
-  display: inline-flex;
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 18px;
-} */
-
-.button-30:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-}
-
-.newTonight {
-    background-color: rgba(255, 255, 255, 0);
-    border-style: solid;
-    border-width: 1px;
-    border-color: #ffffff15;
-    color:rgba(255, 255, 255, 0.229);
-    padding:7.5px;
-}
-
-.newTonight:hover {
-    background-color: rgba(255, 255, 255, 0);
-    border-style: solid;
-    border-width: 1px;
-    border-color: #2424244e;
-    color:rgba(255, 255, 255, 0.748);
-    padding:7.5px;
-}
-
-/*Modular Mobile Menu Import from build103 */
-/*AHOY MOBILE TICKER STYLE */
-
-@media only screen and (max-width: 755px) {
-    .MOBILEmenuMENU {display:block;}
-}
-
-
-/*MOBILE MENU */
-@media only screen and (max-width: 755px) {
-
-.MOBILEmenuMENU {
-display: block;
-min-width:70%;
-max-width: 320px;
-min-height:auto;
-/*max-height:200px;*/
-position:absolute;
-z-index: 1999;
-top: 80.5%;
-left: 50%;
-transform: translate(-50%, -50%); 
-text-align:center;
-padding-bottom:15px;
-
-}
-}
-
-@media only screen and (max-width: 755px) {
-
-.buttonMOBILEa {
-background-color: rgba(38, 0, 255, 0.026);
-min-width: 310px;
-min-height: 50px;
-border-style: solid;
-border-width: .15em;
-border-color:#ffffff8a;
-transform: scale(0.84);
-
-
-color:rgb(255, 255, 255);
-text-align:center;
-font-size:12px;
-}  
-
-.buttonMOBILEa:hover {
-background-color: #51000067;
-min-width: 310px;
-min-height: 50px;
-border-style: solid;
-border-width: .25em;
-border-color:#ffffff;
-
-color:rgb(255, 255, 255);
-text-align:center;
-transform: scale(.84);
-}
-}
-
-
-    
-/* @media (min-width: 500px) and (orientation: landscape) {
-    /* Your style goes here 
-    .MOBILEmenuMENU{display:none;}
-    .MOBILEannouncement{display: none;}
-    } */
-@media only screen and (max-width: 600px) {
-    .ahoy_ticker { display:none; }
-    .ahoyTickerCol { display:none;}
-    .ahoyTickerColMIDDLE {display:none;}
-    .ahoyTickerColTIME {display:none;}
-
-
-    #ahoyMobileTicker {
-        display: block;
-    }
-
-}
-
-
-@media only screen and (max-width: 600px) {
-html {
-    position: relative;
-    min-width: auto;
-    min-height: auto;
-
-}
-}
-
-@media only screen and (max-width: 600px) {
-    .innerBox {
-        min-width: 100%;
-    }
-
-    .outerBox {
-        margin:18px;
-    }
-
-}
-
-@media only screen and (max-width: 600px) {
-body { 
-  /*  background-image: url('https://bestanimations.com/media/water/185829572dark-wave-water-ocean-gif.gif');
-    background-size: stretch;
-    background-blend-mode:darken; */
-    background-color: #0a0027;
-    background-position: 95% -20%;
-    padding:15px;
-        
-       }
-
-    }
-
-
-/*MOBILE VIDOE @iphone 8 */
-
-    @media only screen and (max-width: 755px) {
-    .wrapper {
-        position: relative;
-    padding-bottom: 50.25%; /* 16:9 */
-    padding-top: 25px;
-    border: white;
-    }
-    }
-    @media only screen and (max-width: 755px) {
-    .wrapper iframe {
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        border-width: 0px;
-        padding:0px;
-        position:relative;
-        }
-            }
-
-/*MOBILE VIDOE @iphone SE */
-
-@media only screen and (max-width: 340px) {
-    .wrapper {
-        position: relative;
-    padding-bottom: 48.25%; /* 16:9 */
-    padding-top: 25px;
-    border: white;
-    }
-    }
-    @media only screen and (max-width: 340px) {
-    .wrapper iframe {
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        border-width: 0px;
-        padding:0px;
-        position:relative;
-        }
-            }
-
-
-
-/*MOBILE ANNOUNCEMENT */
-
-
-    @media only screen and (max-width: 755px) {
-
-
-.MOBILEannouncement {
-    display: block;
-    padding:22px;
-    text-align:center;
-    background-color: #f8000c10;
-    margin:18px;
-    font-family: rubik;
-    font-size:14px;
-    border-style:solid;
-    border-color:rgb(255, 255, 255);
-    border-width:1px;
-    
-
-
-
-}
-
-    }
-
-    @media only screen and (max-width: 801px) {
-.watchMenuRight {
-    font-size: 8px;
-    
-}
-#ahoyPushTitle {display:none;}
-#ahoyPushTime {display:none;}
-#span {display:none;}
-
-    }
-
-    @media only screen and (max-width: 900px) { 
-        .playBlockDisplayDiv {display:none;}
-    }
-
-/*AG NEW STYLES */
-.ahoy_ticker {
-    background-color:rgba(20, 0, 0, 0.708);
-    padding:2.5px;
-}
-
-.ahoy_ticker:hover {
-    background-color:rgba(36, 0, 24, 0.708);
-    padding:2.5px;
-}
-
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(255, 0, 119, 0.5);
-}
-
-.MOBILEannouncement {
-    border-color: rgba(255, 0, 0, 0.294);
-    font-size:12px;
-
-}
-
-.MOBILEannouncement:hover {
-    border-color: rgba(255, 0, 0, 0.294);
-    background-color:rgba(255, 0, 21, 0.407);
-    font-size:12px;
-
-}
-
-/* END OF AG NEW STYLES */
-
-</style>
+<title>Watch, Ahoy Indie Media</title>
 </head>
 
 <body>
   
 
-<!-- AHOY MOBILE TICKER - BUILD 100 -->
 
-
-<div class="MOBILEmenuMENU">
-    <br> <button class="buttonMOBILEa" onclick="location.href='https://ahoy.ooo'">Menu</button> 
-    <br> <button class="buttonMOBILEa" onclick="location.href='https://watch.ahoy.ooo'">Watch</button>
-    <br> <button class="buttonMOBILEa" onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
-    <br> <button class="buttonMOBILEa" onclick="location.href='https://ahoy.ooo/schedule.html">Schedule</button>
-    
- </div>
- 
- 
- <!-- END OF MOBILE TICKER -->
 
 <!-- THE MAIN DEAL-->
 
@@ -764,7 +57,19 @@ img:hover {
 
 <!-- END OF THE MAIN DEAL-->
 
+<!-- AHOY MOBILE TICKER - BUILD 100 -->
 
+
+<div class="MOBILEmenuMENU">
+    <br> <button class="buttonMOBILEa" onclick="location.href='https://ahoy.ooo'">Menu</button> 
+    <br> <button class="buttonMOBILEa" onclick="location.href='https://watch.ahoy.ooo'">Watch</button>
+    <br> <button class="buttonMOBILEa" onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
+    <br> <button class="buttonMOBILEa" onclick="location.href='https://ahoy.ooo/schedule.html">Schedule</button>
+    
+ </div>
+ 
+ 
+ <!-- END OF MOBILE TICKER -->
 
 
 
@@ -788,8 +93,7 @@ img:hover {
 
 <!-- MOBILE ANNOUNCMENT -->
 <div class="MOBILEannouncement">
-    <p style="color:wheat; text-transform: uppercase; font-size: 12px;">New Content <br>TONIGHT: 7PM EST </p>
-    <p style="color:white;">The Rob Show #7 <br> Jon Peck </p>
+    <p style="color:wheat; text-transform: uppercase; font-size: 12px;" id="superAnnounceMobile">New Content <br>TONIGHT: 7PM EST </p>
 </div>
 
 
@@ -826,8 +130,8 @@ img:hover {
 <!-- Pontential Middle Content Goes here -->
 
 <div id="newTonight" class="newTonight">
-    <p style="color:wheat; text-transform: uppercase; font-size: 12px;"> New Content | Thursday's 7PM EST </p>
-    <p style="color:white;">New This Week = The Rob Show #7 : Jon Peck  </p>
+    <p id="superAnnounceDesktop" style="color:wheat; text-transform: uppercase; font-size: 12px;"> New Content | Thursday's 7PM EST </p>
+
 </div>
 
 <!-- Pontential Middle Content Goes here -->
@@ -1014,6 +318,10 @@ setInterval(time, 1000);
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 1";
         document.getElementById('ahoyPlayer').src = playBlock1;
        // alert("It is 7AM - playblock 1 should load"); 
+
+       //NEW - UPDATE MOBILE ANNOUNCEMENT FOR 7 AM // 
+       document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Ahoy Morning Classics";
+       document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Ahoy Morning Classics";
     }
 
         if (hr == 8) {
@@ -1021,6 +329,11 @@ setInterval(time, 1000);
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 1";
         document.getElementById('ahoyPlayer').src = playBlock1;
         //alert("It is 8AM - playblock 1 should load"); 
+
+        //NEW - UPDATE MOBILE ANNOUNCEMENT FOR 8 AM // 
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Ahoy Morning Classics";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Ahoy Morning Classics";
+
     }
 
         if (hr == 9) {
@@ -1028,6 +341,9 @@ setInterval(time, 1000);
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 1";
         document.getElementById('ahoyPlayer').src = playBlock1;
         //alert("It is 9AM - playblock 1 should load"); 
+        //NEW - UPDATE MOBILE ANNOUNCEMENT FOR 8 AM // 
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Ahoy Morning Classics";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Ahoy Morning Classics";
     }
 
 
@@ -1039,6 +355,8 @@ setInterval(time, 1000);
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 2";
         document.getElementById('ahoyPlayer').src = playBlock2;
         //alert("It is 10AM - playblock 2 should load"); 
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Ahoy Daytime Clips";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Ahoy Daytime Clips";
     }
 
         if (hr == 11) {
@@ -1046,6 +364,8 @@ setInterval(time, 1000);
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 2";
         document.getElementById('ahoyPlayer').src = playBlock2;
         //alert("It is 11AM - playblock 2 should load");
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br>Ahoy Daytime Clips";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br>Ahoy Daytime Clips";
      }
 
         if (hr == 12) {
@@ -1053,6 +373,8 @@ setInterval(time, 1000);
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 2";
         document.getElementById('ahoyPlayer').src = playBlock2;
         //alert("It is 12PM - playblock 2 should load"); 
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br>Ahoy Daytime Clips";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br>Ahoy Daytime Clips";
     }
 
 // BLOCK 3 = 1pm to 4pm - All times should play "playBlock3"
@@ -1063,6 +385,8 @@ setInterval(time, 1000);
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 3";
         document.getElementById('ahoyPlayer').src = playBlock3a;
         //alert("It is 1pm - playblock 3 should load"); 
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Music Videos";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Music Videos";
     }
 
         if (hr == 14) {
@@ -1070,6 +394,8 @@ setInterval(time, 1000);
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 3";
         document.getElementById('ahoyPlayer').src = playBlock3a;
         //alert("It is 2pm - playblock 3 should load"); 
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Music Videos";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Music Videos";
     }
 
         if (hr == 15) {
@@ -1077,6 +403,8 @@ setInterval(time, 1000);
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 3";
         document.getElementById('ahoyPlayer').src = playBlock3a;
         //alert("It is 3pm - playblock 3 should load"); 
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Music Videos";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Music Videos";
     }
 
 
@@ -1089,19 +417,25 @@ setInterval(time, 1000);
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 4c";
         document.getElementById('ahoyPlayer').src = playBlock4c;
         //alert("It is 4pm - playblock 4 should load"); 
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Ahoy Previous Weekly";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Ahoy Previous Weekly";
     }
 
 
     if (hr == 17) {
             //document.getElementById("ahoyPushTime").innerHTML = "Time is 5pm";
-            document.getElementById("ahoyPushTitle").innerHTML = "playBlock 5d";
-            document.getElementById('ahoyPlayer').src = playBlock5d;
+            document.getElementById("ahoyPushTitle").innerHTML = "playBlock 4c";
+            document.getElementById('ahoyPlayer').src = playBlock4c;
+            document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Ahoy Previous Weekly";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Ahoy Previous Weekly";
         }
 
     if (hr == 18) {
        // document.getElementById("ahoyPushTime").innerHTML = "Time is 6pm";
-        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 5c";
-        document.getElementById('ahoyPlayer').src = playBlock5c;
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 4c";
+        document.getElementById('ahoyPlayer').src = playBlock4c;
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Ahoy Previous Weekly";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Ahoy Previous Weekly";
     }
 
 
@@ -1113,38 +447,51 @@ if (hr == 19) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 7pm";
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 5c";
         document.getElementById('ahoyPlayer').src = playBlock5c;
-    }
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Primetime : The Rob Show Episode 7: Jon Peck";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Primetime : The Rob Show Episode 7: Jon Peck";   
+     }
 
     if (hr == 20) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 8pm";
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 5c";
         document.getElementById('ahoyPlayer').src = playBlock5c;
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Primetime : The Rob Show Episode 7: Jon Peck";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Primetime : The Rob Show Episode 7: Jon Peck";   
+        
     }
 
     if (hr == 21) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 9pm";
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 5c";
         document.getElementById('ahoyPlayer').src = playBlock5c;
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Primetime : The Rob Show Episode 7: Jon Peck";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Primetime : The Rob Show Episode 7: Jon Peck";   
     }
 
    
 
     if (hr == 22) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 10pm";
-        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
-        document.getElementById('ahoyPlayer').src = playBlock6;
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 5c";
+        document.getElementById('ahoyPlayer').src = playBlock5c;
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Primetime : The Rob Show Episode 7: Jon Peck";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Primetime : The Rob Show Episode 7: Jon Peck";   
     }
 
     if (hr == 23) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 11pm";
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
-        document.getElementById('ahoyPlayer').src = playBlock6;
+        document.getElementById('ahoyPlayer').src = playBloc6;
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> *NEW* Public Domain Scary for the Sake of Halloween";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> *NEW* Public Domain Scary for the Sake of Halloween";   
     }
 
     if (hr == 24) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 12 am";
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
         document.getElementById('ahoyPlayer').src = playBlock6;
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> *NEW* Public Domain Scary for the Sake of Halloween";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> *NEW* Public Domain Scary for the Sake of Halloween";  
     }
 
      // Block 6 = Block 6 = 12PM to 3AM All times should play "playBlock6"
@@ -1154,18 +501,24 @@ if (hr == 19) {
        // document.getElementById("ahoyPushTime").innerHTML = "Time is 1AM";
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
         document.getElementById('ahoyPlayer').src = playBlock6;
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> *NEW* Public Domain Scary for the Sake of Halloween";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> *NEW* Public Domain Scary for the Sake of Halloween";  
     }
 
     if (hr == 2) {
        // document.getElementById("ahoyPushTime").innerHTML = "Time is 2am";
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
         document.getElementById('ahoyPlayer').src = playBlock6;
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> *NEW* Public Domain Scary for the Sake of Halloween";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> *NEW* Public Domain Scary for the Sake of Halloween";  
     }
 
     if (hr == 3) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 3am";
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
         document.getElementById('ahoyPlayer').src = playBlock6;
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> *NEW* Public Domain Scary for the Sake of Halloween";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> *NEW* Public Domain Scary for the Sake of Halloween";  
     }
 
 
@@ -1176,18 +529,24 @@ if (hr == 19) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 4AM";
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 7";
         document.getElementById('ahoyPlayer').src = playBlock7;
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Late Night Random Little HomeMade Clips";
+        document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Late Night Random Little HomeMade Clips";
     }
 
     if (hr == 5) {
        // document.getElementById("ahoyPushTime").innerHTML = "Time is 5am";
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 7";
         document.getElementById('ahoyPlayer').src = playBlock7;
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Late Night Random Little HomeMade Clips";
+         document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Late Night Random Little HomeMade Clips";
     }
 
     if (hr == 6) {
         //document.getElementById("ahoyPushTime").innerHTML = "Time is 6am";
         document.getElementById("ahoyPushTitle").innerHTML = "playBlock 1";
         document.getElementById('ahoyPlayer').src = playBlock1;
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Late Night Random Little HomeMade Clips";
+         document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Late Night Random Little HomeMade Clips";
     }
 
 
