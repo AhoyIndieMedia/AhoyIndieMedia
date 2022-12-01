@@ -704,13 +704,13 @@ img:hover {
 
 .MOBILEannouncement {
     border-color: rgba(255, 0, 0, 0.294);
-    font-size:12px;
+    font-size: 32px !important;
 
 }
 
 .MOBILEannouncement:hover {
     border-color: rgba(0, 255, 234, 0.294);
-    background-color:rgba(0, 191, 255, 0.407);
+    background-color:rgba(0, 8, 255, 0.407);
     font-size:12px;
 
 }
@@ -721,7 +721,8 @@ img:hover {
 .iconMobileMenu {
     width:50px;
     height:auto;
-    opacity:0.5;
+    opacity:0.75;
+    background-color:rgba(72, 0, 255, 0.167);
     
 }
 
@@ -733,3 +734,31 @@ img:hover {
     border-color:rgba(0, 255, 255, 0.658);
     opacity: 1;
 }
+
+
+/* 12.1.22 */
+/* NEW UPDATES */
+/* Kill the Middle Column when under 850px - and instead stretch out the right menu a bit */
+
+@media only screen and (max-width: 850px) {
+
+    .ahoyTickerCol {
+        background-color: rgb(10, 0, 47);
+    }
+.ahoyTickerColMIDDLE {
+
+    display:none;
+
+}
+
+.newTonight {
+    display:none;
+}
+
+.ahoyTickerColTIME {
+    background-color: rgb(10, 0, 47);
+    width: 70%!important;
+}
+
+}
+
