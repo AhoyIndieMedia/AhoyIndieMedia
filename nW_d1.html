@@ -1,0 +1,75 @@
+<html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    
+    <link rel="stylesheet" href="nw.css">
+
+    <title>nw-d1</title>
+      <!--FAVICON-->
+      <link rel="icon" 
+      type="image/png" 
+      href="/faviconAhoy.png" />
+    </head>
+
+<body>
+    <main>
+        <section class="wrap-VideoSection">
+        
+        <div class="windowVideo">
+            <div class="videoWrapper" id="ahoyPlayerWrapper">
+            <iframe id="ahoyPlayer" src="https://cdn.jwplayer.com/players/SyfFOIKw-puZB4zfJ.html" frameborder="0" allowfullscreen></iframe>
+        </div>
+        </div>
+        </section>
+
+    </main>
+    <div class="mobileMenu-wrap">
+        <br> <a href="https://ahoy.ooo"><img class="iconMobile-menu" src="https://i.ibb.co/x5KkPqr/Icon.png"></a>
+     </div>
+    <!--
+    -->
+    <footer>
+        <!-- 
+        <div class="wrap-fullscreen">
+           <button onclick="openFullscreen();">Fullscreen Mode</button>
+            <button>Mute</button>
+            <button>Cast</button>
+        </div>-->
+        <div class="wrap-tickerMain">
+            <div class="wrap-logo">
+                <img class="logo" src="ahoy.png">
+            </div>
+            <div class="wrap-News">
+                Now Playing = Ahoy Classics 
+                <br> Up Next = Mid-afternoon Skate
+            </div>
+            <div class="wrap-menu">
+                <button>Menu</button>
+                <button class="activeButton">Watch</button>
+                <button>Radio</button>
+                <button>Schedule</button>
+                <button>Fund</button>
+                <button>Updates</button>
+
+            </div>
+        </div>
+    </footer>
+    <!-- FULL BUTTON SCREEN CODE -->
+
+<script>
+    var elem = document.getElementById("ahoyPlayer");
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
+    </script>
+<!-- END OF FULL BUTTON SCREEN CODE -->
+    </body>
+</html>
