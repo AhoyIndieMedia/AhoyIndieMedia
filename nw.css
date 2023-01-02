@@ -26,8 +26,6 @@ main {
     display:flex;
     border-style:solid;
     border-color:white;
-   
- 
 }
 
 .videoWrapper {
@@ -47,8 +45,8 @@ main {
   margin: auto;
   width: 100%;
   height: 100%;
-  max-width:840px;
-  max-height:472.5px;
+  max-width:1050px;
+  max-height:590px;
 
  }
 
@@ -108,9 +106,6 @@ footer {
     overflow:hidden;
     font-weight:600;
     font-size:14px;
-
-
-    
 }
 
 .wrap-menu {
@@ -208,6 +203,23 @@ button:hover {
 
     .iconMobile-menu:hover {
         background-color: rgb(255, 0, 128);
+        border-radius:5px;
     }
  }
 
+ /*END OF MOBILE CONDITIONALS */
+
+ 
+/*Mobile Wrap */
+
+@media only screen and (max-width: 600px) {
+    .windowVideo {
+        
+        position:fixed;
+        top: 120;
+        left: 0;   
+        width:100%;
+
+
+    }
+}
