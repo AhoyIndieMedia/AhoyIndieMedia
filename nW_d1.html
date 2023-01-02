@@ -6,7 +6,7 @@
     
     <link rel="stylesheet" href="nw.css">
 
-    <title>nw-d1</title>
+    <title>nW-d2</title>
       <!--FAVICON-->
       <link rel="icon" 
       type="image/png" 
@@ -46,12 +46,12 @@
                 <br> Up Next = Mid-afternoon Skate
             </div>
             <div class="wrap-menu">
-                <button>Menu</button>
-                <button class="activeButton">Watch</button>
-                <button>Radio</button>
-                <button>Schedule</button>
-                <button>Fund</button>
-                <button>Updates</button>
+                <button onclick="location.href='https://ahoy.ooo'">Menu</button>
+                <button onclick="location.href='https://watch.ahoy.ooo'" class="activeButton">Watch</button>
+                <button onclick="location.href='https://radio.ahoy.ooo'">Radio</button>
+                <button onclick="location.href='https://ahoy.ooo/schedule.html'">Schedule</button>
+                <button onclick="location.href='https://ahoy.ooo/fund.html'">Fund</button>
+                <button onclick="location.href='https://ahoy.ooo/updates.html'">Updates</button>
 
             </div>
         </div>
@@ -71,5 +71,280 @@
     }
     </script>
 <!-- END OF FULL BUTTON SCREEN CODE -->
+
+<!-- JAVSCRIPT IMPORT FROM BEFORE-->
+
+<!-- CODE CODE CODE CODE-->
+
+<!-- SUPER SUPER SUPER SUPER -->
+<!-- JUKEBOX JUKEBOX JUKEBOX -->
+<script>
+
+    
+    day = new Date()
+    hr = day.getHours()
+
+
+    let playBlock1 = "https://cdn.jwplayer.com/players/w4LWEPfF-xwwQ9uP0.html";
+    let playBlock2 = "https://cdn.jwplayer.com/players/zjygbzug-xwwQ9uP0.html";
+    let playBlock3 = "https://cdn.jwplayer.com/players/H8BqDxVM-xwwQ9uP0.html";
+    let playBlock4 = "https://cdn.jwplayer.com/players/BUJsJkMQ-xwwQ9uP0.html";
+    let playBlock5 = "https://cdn.jwplayer.com/players/PdzRKKiA-xwwQ9uP0.html";
+    let playBlock6 = "https://cdn.jwplayer.com/players/sEWgfjsC-xwwQ9uP0.html";
+    let playBlock7 = "https://cdn.jwplayer.com/players/I2PgVDeT-xwwQ9uP0.html";
+    let playBlock8 = "https://cdn.jwplayer.com/players/KFeA3ed2-xwwQ9uP0.html";
+
+    //newLet
+
+    let playBlock1a = "https://cdn.jwplayer.com/players/w4LWEPfF-xwwQ9uP0.html";
+    let playBlock2a = "https://cdn.jwplayer.com/players/zjygbzug-xwwQ9uP0.html";
+    let playBlock3a = "https://cdn.jwplayer.com/players/H8BqDxVM-xwwQ9uP0.html";
+    let playBlock4a = "https://cdn.jwplayer.com/players/BUJsJkMQ-xwwQ9uP0.html";
+    let playBlock4c = "https://cdn.jwplayer.com/players/y9AU0Kmk-puZB4zfJ.html";
+    let playBlock5a = "https://cdn.jwplayer.com/players/PdzRKKiA-xwwQ9uP0.html";
+    let playBlock5b = "https://cdn.jwplayer.com/players/r2CLsAB7-puZB4zfJ.html";
+    let playBlock5c = "https://cdn.jwplayer.com/players/SyfFOIKw-xwwQ9uP0.html";
+    let playBlock5d = "https://cdn.jwplayer.com/players/HPkC3BmX-puZB4zfJ.html";
+
+    // THE DYNAMIC PLAYBLOCK - THAT SHOULD PLAY ON SATURDAY AND SUNDAY
+    let playBlockDynamicA = "https://cdn.jwplayer.com/players/LnzWaP49-puZB4zfJ.html";
+
+//START THE CLOCK BABY // START AT 7 AM 
+
+// BLOCK 1 = 7AM to 10AM - All times should play "playBlock1"
+   
+    if (hr == 7) {
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 1";
+    document.getElementById('ahoyPlayer').src = playBlock1;
+   // alert("It is 7AM - playblock 1 should load"); 
+
+   //NEW - UPDATE MOBILE ANNOUNCEMENT FOR 7 AM // 
+   document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Ahoy Morning Classics";
+   document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Ahoy Morning Classics";
+}
+
+    if (hr == 8) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 8AM";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 1";
+    document.getElementById('ahoyPlayer').src = playBlock1;
+    //alert("It is 8AM - playblock 1 should load"); 
+
+    //NEW - UPDATE MOBILE ANNOUNCEMENT FOR 8 AM // 
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Ahoy Morning Classics";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Ahoy Morning Classics";
+
+}
+
+    if (hr == 9) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 9AM";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 1";
+    document.getElementById('ahoyPlayer').src = playBlock1;
+    //alert("It is 9AM - playblock 1 should load"); 
+    //NEW - UPDATE MOBILE ANNOUNCEMENT FOR 8 AM // 
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Ahoy Morning Classics";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Ahoy Morning Classics";
+}
+
+
+// BLOCK 2 = 10AM to 1PM - All times should play "playBlock2"
+
+
+    if (hr == 10) {
+   // document.getElementById("ahoyPushTime").innerHTML = "Time is 10AM";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 2";
+    document.getElementById('ahoyPlayer').src = playBlock2;
+    //alert("It is 10AM - playblock 2 should load"); 
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Ahoy Daytime Clips";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Ahoy Daytime Clips";
+}
+
+    if (hr == 11) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 11AM";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 2";
+    document.getElementById('ahoyPlayer').src = playBlock2;
+    //alert("It is 11AM - playblock 2 should load");
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br>Ahoy Daytime Clips";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br>Ahoy Daytime Clips";
+ }
+
+    if (hr == 12) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 12AM";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 2";
+    document.getElementById('ahoyPlayer').src = playBlock2;
+    //alert("It is 12PM - playblock 2 should load"); 
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br>Ahoy Daytime Clips";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br>Ahoy Daytime Clips";
+}
+
+// BLOCK 3 = 1pm to 4pm - All times should play "playBlock3"
+
+
+    if (hr == 13) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 1PM";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 3";
+    document.getElementById('ahoyPlayer').src = playBlock3a;
+    //alert("It is 1pm - playblock 3 should load"); 
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Music Videos";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Music Videos";
+}
+
+    if (hr == 14) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 2PM";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 3";
+    document.getElementById('ahoyPlayer').src = playBlock3a;
+    //alert("It is 2pm - playblock 3 should load"); 
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Music Videos";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Music Videos";
+}
+
+    if (hr == 15) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 3PM";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 3";
+    document.getElementById('ahoyPlayer').src = playBlock3a;
+    //alert("It is 3pm - playblock 3 should load"); 
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Music Videos";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Music Videos";
+}
+
+
+
+// BLOCK 4 = 4pm - 5pm  - All times should play "playBlock4"
+
+
+    if (hr == 16) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 4pm";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 4c";
+    document.getElementById('ahoyPlayer').src = playBlock4c;
+    //alert("It is 4pm - playblock 4 should load"); 
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Ahoy Previous Weekly";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Ahoy Previous Weekly";
+}
+
+
+if (hr == 17) {
+        //document.getElementById("ahoyPushTime").innerHTML = "Time is 5pm";
+        document.getElementById("ahoyPushTitle").innerHTML = "playBlock 4c";
+        document.getElementById('ahoyPlayer').src = playBlock4c;
+        document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Ahoy Previous Weekly";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Ahoy Previous Weekly";
+    }
+
+if (hr == 18) {
+   // document.getElementById("ahoyPushTime").innerHTML = "Time is 6pm";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 4c";
+    document.getElementById('ahoyPlayer').src = playBlock4c;
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Ahoy Previous Weekly";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Ahoy Previous Weekly";
+}
+
+if (hr == 19) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 7pm";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 5c";
+    document.getElementById('ahoyPlayer').src = playBlock5c;
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Primetime : The Rob Show ";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Primetime : The Rob Show ";   
+ }
+
+if (hr == 20) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 8pm";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 5c";
+    document.getElementById('ahoyPlayer').src = playBlock1;
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Primetime : The Rob Show ";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Primetime : The Rob Show ";   
+    alert("It is 8PM - playblock 1 should load"); 
+}
+
+if (hr == 21) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 9pm";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 5c";
+    document.getElementById('ahoyPlayer').src = playBlock5c;
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Primetime : The Rob Show ";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Primetime : The Rob Show ";   
+}
+
+
+
+if (hr == 22) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 10pm";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 5c";
+    document.getElementById('ahoyPlayer').src = playBlock5c;
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Primetime : The Rob Show Episode 7: Jon Peck";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Primetime : The Rob Show ";   
+}
+
+if (hr == 23) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 11pm";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
+    document.getElementById('ahoyPlayer').src = playBloc6;
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> *NEW* Public Domain Scary for the Sake of Halloween";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Homemade Lofi Bangers ";   
+}
+
+if (hr == 24) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 12 am";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
+    document.getElementById('ahoyPlayer').src = playBlock6;
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> *NEW* Public Domain Scary for the Sake of Halloween";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Late Night Hodgepodge";  
+}
+
+ // Block 6 = Block 6 = 12PM to 3AM All times should play "playBlock6"
+
+
+if (hr == 1) {
+   // document.getElementById("ahoyPushTime").innerHTML = "Time is 1AM";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
+    document.getElementById('ahoyPlayer').src = playBlock6;
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> *NEW* Public Domain Scary for the Sake of Halloween";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Late Night Hodgepodge";  
+}
+
+if (hr == 2) {
+   // document.getElementById("ahoyPushTime").innerHTML = "Time is 2am";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
+    document.getElementById('ahoyPlayer').src = playBlock6;
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> *NEW* Public Domain Scary for the Sake of Halloween";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Late Night Hodgepodge";  
+}
+
+if (hr == 3) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 3am";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 6";
+    document.getElementById('ahoyPlayer').src = playBlock6;
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> *NEW* Public Domain Scary for the Sake of Halloween";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Homemade Lofi Bangers ";  
+}
+
+
+// Block 7 = Block 7 = 3AM to 5AM "playBlock7"
+
+
+if (hr == 4) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 4AM";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 7";
+    document.getElementById('ahoyPlayer').src = playBlock7;
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Late Night Random Little HomeMade Clips";
+    document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Late Night Random Little HomeMade Clips";
+}
+
+if (hr == 5) {
+   // document.getElementById("ahoyPushTime").innerHTML = "Time is 5am";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 7";
+    document.getElementById('ahoyPlayer').src = playBlock7;
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Late Night Random Little HomeMade Clips";
+     document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Late Night Random Little HomeMade Clips";
+}
+
+if (hr == 6) {
+    //document.getElementById("ahoyPushTime").innerHTML = "Time is 6am";
+    document.getElementById("ahoyPushTitle").innerHTML = "playBlock 1";
+    document.getElementById('ahoyPlayer').src = playBlock1;
+    document.getElementById("superAnnounceMobile").innerHTML = "Now Playing <br> Late Night Random Little HomeMade Clips";
+     document.getElementById("superAnnounceDesktop").innerHTML = "Now Playing <br> Late Night Random Little HomeMade Clips";
+}
+
+
+</script>
+
     </body>
 </html>
