@@ -1,225 +1,290 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik');
-html {
+
+body {
+    font-family: 'Rubik', sans-serif; 
+    padding:5px;
+    background-color:antiquewhite;
+}
+
+            td {
+                padding:10px;
+                
+                
+            }
+
+            .td1 {
+                text-transform:uppercase;
+                font-weight:900;
+                border-style:solid;
+                max-width:33%;
+                font-size:16px;
+                background-color:rgba(172, 255, 47, 0);
+                width:300px;
+                text-align:left;
+            }
+
+            .td2 {
+                font-size:16px;
+                font-weight:600;
+                border-style:solid;
+                text-transform:uppercase;
+                background-color:rgba(0, 128, 0, 0);
+                width:300px;
+                text-align: left;
+            }
+
+            .td3 {
+                font-size:16px;
+                font-weight:300;
+                border-style:solid;
+                text-transform:uppercase;
+                background-color:rgba(0, 128, 0, 0);
+                width:100px;
+                text-align:center;
+            }
+
+
+            /*TABLE HOVER STATES */
+            .td1:hover {
+              
+              background-color:rgba(21, 21, 21, 0.14);
+          }
+            
+            .td2:hover {
+               
+                background-color:rgba(21, 21, 21, 0.14);
+            }
+
+            .td3:hover {
+                cursor: pointer;
+              background-color:rgb(208, 255, 0);
+          }
+
+          /*TR Business */
+            tr {
+                height:40px;
+                border-style: solid!important;
+                border-width: 1px;
+                border-color:black;
+            }
+
+
+
+.mainMarketWrap {
+    width:90%;
+    height:88vh;
+    display:flex;
+    background-color:rgba(128, 0, 128, 0);
+    padding:10px;
+    align-items: center;
+    justify-content: center;
+    border-style:solid;
+}
+
+.mainMarketChildWrap {
+    /* width:920px;
+    max-width:1200px; */
+    min-height:200px;
+    justify-content: center;
+    background-color:rgba(255, 0, 0, 0);
+    border-style:solid;
+    border-width:thin;
+    overflow: scroll;
+    max-height:800px;
+
+
+}
+
+.topNavMain {
+    width:100%;
+    height:50px;
+    border-style:solid;
+    display:flex;
+    align-items:bottom;
+
+
+}
+
+.buttonTopNav {
+    background-color:rgba(255, 255, 255, 0);
+    border-style:solid;
+    border-color:rgba(0, 0, 0, 0.646);
+    text-transform:uppercase;
+    font-family: 'Rubik', sans-serif; 
+    font-weight:600;
+    padding:10px;
+
+}
+
+.buttonTopNav:hover{
+    background-color: rgba(119, 119, 119, 0.426);
+    cursor: pointer;
+}
+
+.topNavMenu {
+    display:flex;
+    width:100%;
+    height:50px
+
+}
+
+/* lil design tools */
+
+.lilSpacer {
+    width:100%
+    height:600px;
+    border-style:solid;
+    border-width:thin;
+
+}
+
+.bodyWrap {
+    background-color:aquamarine;
+    margin-top:100px;
+}
+
+.backpack {
+    position:absolute;
+    right: 0;
+    margin-right: 1%;
+    border-width:thin;
+    border-color:rgb(35, 152, 255);
+    border-style:solid;
+    width:100px;
+    height:50px;
+    text-align:center;
+    background-color:rgba(0, 255, 234, 0.737);
+}
+
+.backpack:hover {
+    background-color:aquamarine;
+}
+
+.tokenNumber {
+    padding:5px;
+    cursor: pointer;
+    font-size:32px;
+    font-weight:300;
+    color:rgba(0, 0, 0, 0.471);
+}
+
+.tokenNumber:hover {
+    color:rgb(0, 0, 0);
+
+}
+
+
+.mainMarketWrap {
+    width:100%;
+    min-width:1000px;
+    position:fixed;
+    margin:auto;
+}
+
+.leFooter {
+    width:100%;
+    min-height: calc(20vh - 70px);
+    border-style:solid;
+    border-width:thin;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+    z-index:100;
+    background-color:antiquewhite;
+}
+
+.playButton {
+    width:300px;
+    height:40px;
+    border-style:solid;
+    border-color:black;
+    text-align:center;
+    
+}
+
+.playButton:hover {
     background-color:black;
     color:white;
+    cursor: pointer;
 }
 
-main {
-    display:block;
-  
-}
-
-/*.wrap-VideoSection {
-    background-color:rgba(0, 128, 0, 0);
+.playWrap {
     width:100%;
-    height:auto;
-    padding-bottom:100px;
-    border-style:solid;
-    border-color:white;
-    margin-top: 0;
-    clear:both;
-  
-}*/
-
-.windowVideo div {
-    background-color:rgba(128, 0, 128, 0.075);
+    height:100px;
     display:flex;
-    border-style:solid;
-    border-color:white;
-}
-
-.videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  align-items:baseline;
-
- 
-}
-.videoWrapper iframe {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  max-width:840px;
-  max-height:472.5px;
-
- }
-
-/*WRAPS*/
-
-/***FULLSCREEN WRAP ***/
-.wrap-fullscreen {
-    display:flex;
+    align-items: center;
     justify-content: center;
-    height:25px;
-    background-color:rgb(0, 0, 0);
-    width:100%;
-    text-align:center;
+
+
 }
 
-/*FOOTER + TICKERS */
-
-footer {
- 
-        position: fixed; 
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 55px;
-        max-height:75px;
-        background-color:rgb(0, 0, 0);
-        border-style:solid;
-        border-width:thin;
-        border-color:white;
-        margin:10px;
-        padding-top:10px;
-        align-items:center;
-    }
-
-.wrap-tickerMain {
+.market-table {
     display:flex;
-    justify-content: space-between;
+    max-width:80%;
+    background-color: rgb(250, 235, 215);
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+tr {
+    height:10px;
+}
+
+.searchWrap {
     width:100%;
-    background-color:rgba(255, 0, 0, 0);
+    display:flex;
 }
 
-.wrap-logo {
-    position:relative;
-    width:100px;
-    height:auto;
-    float:left;
-    padding-left:10px;
 
-}
+/*Search Bar Additions */
+/********** Search Bar **********/
+input[type="search"] {
+    border-width: 2px;
+    display: inline-block;
+    padding-left: 2.5em;
+    transition: width 0.4s ease-in-out 0s;
+    width: 150px;
+    background-color:antiquewhite;
+  }
+  
+  input[type="search"]:focus {
+    width: 60%;
+  }
+  
+  label[for="search"] {
+    bottom: 6px;
+    color: #999;
+    left: 1em;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  [contenteditable]:hover {
+    background-color: #f8f8f8;
+    cursor: cell;
+  }
+  
+  [contenteditable]:focus {
+    background-color: #f8f8f8;
+  }
 
-.wrap-News {
-    background-color:rgb(0, 0, 0);
-    text-align:left;
-    position:relative;
-    justify-content: center;
-    max-height:55px;
-    overflow:hidden;
+  /* GRAPHICS */
+
+  .graphicIcon {
+    width:48px;
+    height:48px;
+  }
+
+  /*TABLE */
+
+  thead {
+    background-color: black;
+    color:white;
     font-weight:600;
-    font-size:14px;
-}
-
-.wrap-menu {
-    position:relative;
-    float:right;
-}
-
-.logo {
-    width:100px;
-    height:auto;
-}
-
-/*BUTTON STYLES */
-
-button {
-    background-color:#000000;
-    color:white;
-    font-size:14px;
-    font-family:rubik;
-    text-decoration: none;
-    text-transform: uppercase;
-    height:30px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    margin: 1px;
-
-}
-
-button:hover {
-    background-color:#4f4f4f;
-    color:white;
-    font-size:14px;
-    font-family:rubik;
-    text-decoration: none;
-    text-transform: uppercase;
-    height:30px;
-    border: none;
-    cursor: pointer;
-    margin: 1px;  
-}
-
-.activeButton {
-    background-color:#ff4797;
-    color:white;
-    font-size:14px;
-    font-family:rubik;
-    text-decoration: none;
-    text-transform: uppercase;
-    height:30px;
-    border: none;
-    cursor:pointer;
-    border:1px;
-    border-color: wheat;
-
-}
+    width:100%;
+  }
 
 
-/*CONDITIONAL*/
-.wrap-News {
-    display:none;
-}
 
-/* ON DESKTOP - SHUT OFF MOBILE MENU */
-.mobileMenu-wrap {
-    display:none;
-}
-
-/*On MOBILE - TURN ON mobileMenu -
- SHUT OFF DESKTOP TICKER */
-
- @media only screen and (max-width: 600px)
-
- {
-    .mobileMenu-wrap {
-        display:block;
-        text-align:center;
-        width:100%;
-        position:fixed;
-        bottom: 25;
-        left: 0;   
-       
-    }
-
-    footer {
-        display:none;
-    }
-
-    .iconMobile-menu {
-        width:52px;
-        height:auto;
-        opacity: 55;
-        radius:20px;
-    }
-
-    .iconMobile-menu:hover {
-        background-color: rgb(255, 0, 128);
-        border-radius:5px;
-    }
- }
-
- /*END OF MOBILE CONDITIONALS */
-
- 
-/*Mobile Wrap */
-
-@media only screen and (max-width: 600px) {
-    .windowVideo {
-        
-        position:fixed;
-        top: 120;
-        left: 0;   
-        width:100%;
-
-
-    }
-}
