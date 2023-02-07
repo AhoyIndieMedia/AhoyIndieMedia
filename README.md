@@ -1,5 +1,10 @@
 ### Oy oy oy  👋
 
+Watch - Ahoy Indie Media
+
+Goal:
+Make a hourly content network ya dig
+
 <!--
 **AhoyIndieMedia/AhoyIndieMedia** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
